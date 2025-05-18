@@ -1,0 +1,553 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Stack Overflow Questions
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Top Bar -->
+  <div class="bg-[#232629] text-white text-xs flex justify-end px-4 py-1 items-center">
+   <div class="flex space-x-4">
+   </div>
+  </div>
+  <!-- Header -->
+  <header class="border-b border-gray-300">
+   <div class="max-w-[1100px] mx-auto flex items-center justify-between px-4 py-3">
+    <a class="flex items-center space-x-2" href="#">
+     <img alt="Stack Overflow logo placeholder" class="w-8 h-9" height="37" src="https://storage.googleapis.com/a1aa/image/d22480f3-d920-41f8-e1ff-da89520dd33f.jpg" width="32"/>
+     <span class="text-xl font-semibold text-[#f48024]">
+      Stack Overflow
+     </span>
+    </a>
+    <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-700">
+     <a class="hover:text-black" href="#">
+      Products
+     </a>
+     <a class="hover:text-black" href="#">
+      Teams
+     </a>
+     <a class="hover:text-black" href="#">
+      Talent
+     </a>
+     <a class="hover:text-black" href="#">
+      Advertising
+     </a>
+     <a class="hover:text-black" href="#">
+      Enterprise
+     </a>
+    </nav>
+    <div class="hidden md:flex items-center space-x-4">
+     <button class="text-sm font-semibold text-[#0a95ff] border border-[#0a95ff] rounded px-3 py-1 hover:bg-[#e1ecf4]" type="button">
+      Log in
+     </button>
+     <button class="text-sm font-semibold text-white bg-[#0a95ff] rounded px-3 py-1 hover:bg-[#0074cc]" type="button">
+      Sign up
+     </button>
+    </div>
+    <button aria-label="Open menu" class="md:hidden text-gray-700 hover:text-black focus:outline-none">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+  </header>
+  <!-- Hero Banner -->
+  <div class="max-w-[1100px] mx-auto px-4 mt-4">
+   <div class="relative rounded-md overflow-hidden">
+    <img alt="Banner with three smiling people" class="w-full h-[150px] object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/9928c298-194d-402b-4268-7ae7b6f552bc.jpg" width="1100"/>
+    <button class="absolute top-4 right-4 bg-[#f48024] text-white text-xs font-semibold rounded px-3 py-1 hover:bg-[#d2691e]" type="button">
+     Ask Question
+    </button>
+   </div>
+  </div>
+  <!-- Main Content -->
+  <main class="max-w-[1100px] mx-auto px-4 mt-6 flex flex-col md:flex-row md:space-x-6">
+   <!-- Left Sidebar -->
+   <aside class="hidden md:block w-64 flex-shrink-0">
+    <nav class="space-y-1 text-sm text-gray-600 font-semibold">
+     <a class="block px-3 py-2 rounded bg-[#f1f2f3] text-[#0a95ff]" href="#">
+      Interesting
+     </a>
+     <a class="block px-3 py-2 rounded hover:bg-[#f1f2f3]" href="#">
+      Bountied
+     </a>
+     <a class="block px-3 py-2 rounded hover:bg-[#f1f2f3]" href="#">
+      Hot
+     </a>
+     <a class="block px-3 py-2 rounded hover:bg-[#f1f2f3]" href="#">
+      Week
+     </a>
+     <a class="block px-3 py-2 rounded hover:bg-[#f1f2f3]" href="#">
+      Month
+     </a>
+    </nav>
+    <div class="mt-6 border border-gray-300 rounded p-3 text-xs text-gray-600">
+     <p class="font-semibold mb-2">
+      Custom Filters
+     </p>
+     <a class="block mb-1 hover:underline" href="#">
+      Create a custom filter
+     </a>
+     <a class="block mb-1 hover:underline" href="#">
+      Ignore Tags
+     </a>
+     <a class="block mb-1 hover:underline" href="#">
+      Favorite Tags
+     </a>
+    </div>
+    <div class="mt-6 border border-gray-300 rounded p-3 text-xs text-gray-600">
+     <p class="font-semibold mb-2">
+      Watched Tags
+     </p>
+     <div class="flex flex-wrap gap-1">
+      <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+       javascript
+      </a>
+      <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+       python
+      </a>
+      <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+       java
+      </a>
+      <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+       c#
+      </a>
+      <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+       php
+      </a>
+     </div>
+    </div>
+    <div class="mt-6 border border-gray-300 rounded p-3 text-xs text-gray-600">
+     <p class="font-semibold mb-2">
+      Ignored Tags
+     </p>
+     <div class="flex flex-wrap gap-1">
+      <a class="bg-[#fddede] text-[#d9534f] rounded px-2 py-0.5" href="#">
+       css
+      </a>
+      <a class="bg-[#fddede] text-[#d9534f] rounded px-2 py-0.5" href="#">
+       html
+      </a>
+     </div>
+    </div>
+   </aside>
+   <!-- Questions List -->
+   <section class="flex-1">
+    <div class="flex justify-between items-center mb-4">
+     <h1 class="text-2xl font-semibold text-gray-900">
+      Questions
+     </h1>
+     <div class="flex items-center space-x-2 text-sm text-gray-600">
+      <span>
+       Newest
+      </span>
+      <button aria-label="Sort by newest" class="text-[#0a95ff] font-semibold">
+       Newest
+      </button>
+      <button aria-label="Sort by active" class="hover:text-[#0a95ff]">
+       Active
+      </button>
+      <button aria-label="Sort by Bountied" class="hover:text-[#0a95ff]">
+       Bountied
+      </button>
+      <button aria-label="Sort by Unanswered" class="hover:text-[#0a95ff]">
+       Unanswered
+      </button>
+      <button aria-label="Sort by More" class="hover:text-[#0a95ff]">
+       More
+      </button>
+     </div>
+    </div>
+    <!-- Question Items -->
+    <div class="divide-y divide-gray-300 border-t border-b border-gray-300">
+     <!-- Question 1 -->
+     <article class="flex py-4 space-x-4">
+      <div class="w-20 flex flex-col items-end text-xs text-gray-600 space-y-1">
+       <div>
+        <span class="font-semibold text-gray-900">
+         0
+        </span>
+        votes
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         0
+        </span>
+        answers
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         0
+        </span>
+        views
+       </div>
+      </div>
+      <div class="flex-1">
+       <h2 class="text-sm font-semibold text-[#0074cc] hover:underline cursor-pointer">
+        <a href="#">
+         How to fix "TypeError: Cannot read property 'map' of undefined" in React?
+        </a>
+       </h2>
+       <p class="text-xs text-gray-600 mt-1">
+        I am getting this error when trying to map over an array in React. How can I fix it?
+       </p>
+       <div class="flex flex-wrap gap-1 mt-2 text-xs">
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         reactjs
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         javascript
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         typescript
+        </a>
+       </div>
+       <div class="mt-2 text-xs text-gray-500">
+        asked
+        <time datetime="2023-10-01T12:00:00Z">
+         Oct 1 at 12:00
+        </time>
+        by
+        <a class="text-[#0074cc] hover:underline" href="#">
+         user123
+        </a>
+       </div>
+      </div>
+     </article>
+     <!-- Question 2 -->
+     <article class="flex py-4 space-x-4">
+      <div class="w-20 flex flex-col items-end text-xs text-gray-600 space-y-1">
+       <div>
+        <span class="font-semibold text-gray-900">
+         5
+        </span>
+        votes
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         2
+        </span>
+        answers
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         150
+        </span>
+        views
+       </div>
+      </div>
+      <div class="flex-1">
+       <h2 class="text-sm font-semibold text-[#0074cc] hover:underline cursor-pointer">
+        <a href="#">
+         What is the difference between let and var in JavaScript?
+        </a>
+       </h2>
+       <p class="text-xs text-gray-600 mt-1">
+        Can someone explain the difference between let and var declarations in JavaScript?
+       </p>
+       <div class="flex flex-wrap gap-1 mt-2 text-xs">
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         javascript
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         es6
+        </a>
+       </div>
+       <div class="mt-2 text-xs text-gray-500">
+        asked
+        <time datetime="2023-09-30T08:30:00Z">
+         Sep 30 at 08:30
+        </time>
+        by
+        <a class="text-[#0074cc] hover:underline" href="#">
+         dev_guru
+        </a>
+       </div>
+      </div>
+     </article>
+     <!-- Question 3 -->
+     <article class="flex py-4 space-x-4">
+      <div class="w-20 flex flex-col items-end text-xs text-gray-600 space-y-1">
+       <div>
+        <span class="font-semibold text-gray-900">
+         3
+        </span>
+        votes
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         1
+        </span>
+        answers
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         75
+        </span>
+        views
+       </div>
+      </div>
+      <div class="flex-1">
+       <h2 class="text-sm font-semibold text-[#0074cc] hover:underline cursor-pointer">
+        <a href="#">
+         How to center a div horizontally and vertically in CSS?
+        </a>
+       </h2>
+       <p class="text-xs text-gray-600 mt-1">
+        What is the best way to center a div both horizontally and vertically using CSS?
+       </p>
+       <div class="flex flex-wrap gap-1 mt-2 text-xs">
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         css
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         html
+        </a>
+       </div>
+       <div class="mt-2 text-xs text-gray-500">
+        asked
+        <time datetime="2023-09-29T15:45:00Z">
+         Sep 29 at 15:45
+        </time>
+        by
+        <a class="text-[#0074cc] hover:underline" href="#">
+         style_master
+        </a>
+       </div>
+      </div>
+     </article>
+     <!-- Question 4 -->
+     <article class="flex py-4 space-x-4">
+      <div class="w-20 flex flex-col items-end text-xs text-gray-600 space-y-1">
+       <div>
+        <span class="font-semibold text-gray-900">
+         10
+        </span>
+        votes
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         4
+        </span>
+        answers
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         300
+        </span>
+        views
+       </div>
+      </div>
+      <div class="flex-1">
+       <h2 class="text-sm font-semibold text-[#0074cc] hover:underline cursor-pointer">
+        <a href="#">
+         How to optimize SQL queries for better performance?
+        </a>
+       </h2>
+       <p class="text-xs text-gray-600 mt-1">
+        Tips and best practices for optimizing SQL queries to improve database performance.
+       </p>
+       <div class="flex flex-wrap gap-1 mt-2 text-xs">
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         sql
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         database
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         performance
+        </a>
+       </div>
+       <div class="mt-2 text-xs text-gray-500">
+        asked
+        <time datetime="2023-09-28T10:20:00Z">
+         Sep 28 at 10:20
+        </time>
+        by
+        <a class="text-[#0074cc] hover:underline" href="#">
+         db_admin
+        </a>
+       </div>
+      </div>
+     </article>
+     <!-- Question 5 -->
+     <article class="flex py-4 space-x-4">
+      <div class="w-20 flex flex-col items-end text-xs text-gray-600 space-y-1">
+       <div>
+        <span class="font-semibold text-gray-900">
+         1
+        </span>
+        votes
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         0
+        </span>
+        answers
+       </div>
+       <div>
+        <span class="font-semibold text-gray-900">
+         20
+        </span>
+        views
+       </div>
+      </div>
+      <div class="flex-1">
+       <h2 class="text-sm font-semibold text-[#0074cc] hover:underline cursor-pointer">
+        <a href="#">
+         How to use async/await in JavaScript?
+        </a>
+       </h2>
+       <p class="text-xs text-gray-600 mt-1">
+        I want to understand how async/await works in JavaScript. Can someone provide examples?
+       </p>
+       <div class="flex flex-wrap gap-1 mt-2 text-xs">
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         javascript
+        </a>
+        <a class="bg-[#e1ecf4] text-[#39739d] rounded px-2 py-0.5" href="#">
+         async-await
+        </a>
+       </div>
+       <div class="mt-2 text-xs text-gray-500">
+        asked
+        <time datetime="2023-09-27T09:00:00Z">
+         Sep 27 at 09:00
+        </time>
+        by
+        <a class="text-[#0074cc] hover:underline" href="#">
+         code_ninja
+        </a>
+       </div>
+      </div>
+     </article>
+    </div>
+    <!-- Pagination -->
+    <nav aria-label="Pagination" class="flex justify-center items-center space-x-2 text-sm font-semibold text-gray-600 mt-6 mb-12">
+     <button aria-label="Previous page" class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100" disabled="">
+      Previous
+     </button>
+     <button aria-current="page" class="px-3 py-1 rounded border border-gray-300 bg-[#f1f2f3] text-[#0a95ff]">
+      1
+     </button>
+     <button class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100">
+      2
+     </button>
+     <button class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100">
+      3
+     </button>
+     <button class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100">
+      4
+     </button>
+     <button class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100">
+      5
+     </button>
+     <button aria-label="Next page" class="px-3 py-1 rounded border border-gray-300 hover:bg-gray-100">
+      Next
+     </button>
+    </nav>
+   </section>
+  </main>
+  <!-- Shopee Footer -->
+  <footer class="max-w-7xl mx-auto px-6 sm:px-10 md:px-16 py-10">
+   <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-0">
+    <div class="flex flex-col space-y-6 md:w-1/3">
+     <img alt="Shopee logo in orange with shopping bag icon" class="w-[100px] h-[30px] object-contain" height="30" src="https://storage.googleapis.com/a1aa/image/3fbf79d1-f286-4257-2022-09ed71b6a3d1.jpg" width="100"/>
+     <div>
+      <p class="text-xs text-gray-400 uppercase mb-2 tracking-wide">
+       Ikuti Kami
+      </p>
+      <div class="flex space-x-4">
+       <a aria-label="LinkedIn" class="text-blue-700 hover:text-blue-800" href="#">
+        <i class="fab fa-linkedin-in text-lg">
+        </i>
+       </a>
+       <a aria-label="Facebook" class="text-blue-600 hover:text-blue-700" href="#">
+        <i class="fab fa-facebook-f text-lg">
+        </i>
+       </a>
+       <a aria-label="Instagram" class="text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600" href="#">
+        <i class="fab fa-instagram text-lg">
+        </i>
+       </a>
+       <a aria-label="Shopee Social" class="text-orange-500 hover:text-orange-600" href="#">
+        <i class="fas fa-envelope text-lg">
+        </i>
+       </a>
+       <a aria-label="YouTube" class="text-red-600 hover:text-red-700" href="#">
+        <i class="fab fa-youtube text-lg">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="flex justify-between md:w-2/3">
+     <div>
+      <p class="text-xs text-gray-400 uppercase mb-2 tracking-wide">
+       Karier Shopee
+      </p>
+      <ul class="text-sm text-gray-700 space-y-1">
+       <li>
+        Beranda
+       </li>
+       <li>
+        Tentang
+       </li>
+       <li>
+        Mengapa Shopee
+       </li>
+       <li>
+        Acara
+       </li>
+       <li>
+        Pekerjaan
+       </li>
+       <li>
+        Mahasiswa
+       </li>
+       <li>
+        Tech
+       </li>
+      </ul>
+     </div>
+     <div>
+      <p class="text-xs text-gray-400 uppercase mb-2 tracking-wide">
+       Selengkapnya
+      </p>
+      <ul class="text-sm text-gray-700 space-y-1">
+       <li>
+        Sea
+       </li>
+       <li>
+        Garena
+       </li>
+       <li>
+        SeaMoney
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+   <hr class="border-t border-gray-200 mt-10"/>
+   <p class="text-xs text-gray-400 mt-4 max-w-full md:max-w-4xl mx-auto">
+    Copyright 漏 2025 Shopee. Trademarks belong to their respective owners. All rights reserved.
+    <span class="border-l border-gray-300 px-2">
+     Persyaratan layanan
+    </span>
+    <span class="border-l border-gray-300 px-2">
+     Kebijakan privasi
+    </span>
+   </p>
+  </footer>
+ </body>
+</html>

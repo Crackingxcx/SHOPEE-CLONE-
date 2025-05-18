@@ -1,0 +1,606 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee Karir
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Custom styles for timeline */
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 18px;
+      width: 4px;
+      height: 100%;
+      background-color: #ee4d2d;
+      border-radius: 2px;
+      z-index: 1;
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 2.5rem;
+      display: flex;
+      gap: 1.5rem;
+      z-index: 10;
+    }
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0.5rem;
+      width: 20px;
+      height: 20px;
+      background-color: #ee4d2d;
+      border-radius: 50%;
+      border: 4px solid #ee4d2d;
+      box-sizing: content-box;
+      z-index: 20;
+      box-shadow: 0 0 0 4px white;
+    }
+    @media (min-width: 640px) {
+      .timeline-item {
+        padding-bottom: 3rem;
+      }
+      .timeline-item::before {
+        top: 1.25rem;
+      }
+    }
+  </style>
+ </head>
+ <body class="bg-white text-[#222222]">
+  <!-- Navbar -->
+  <nav class="flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-20 py-4 border-b border-gray-200 sticky top-0 bg-white z-50">
+   <a class="flex items-center space-x-2" href="#">
+    <img alt="Shopee Logo" class="h-8 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Shopee_logo.svg"/>
+    <span class="font-semibold text-xl text-[#ee4d2d]">
+     Karir
+    </span>
+   </a>
+   <ul class="hidden md:flex space-x-8 text-sm font-semibold text-[#222222]">
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Tentang Shopee
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Budaya Kerja
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Perjalanan Kami
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Nilai Kami
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Kantor Kami
+     </a>
+    </li>
+    <li>
+     <a class="hover:text-[#ee4d2d]" href="#">
+      Jelajahi Life at Shopee
+     </a>
+    </li>
+   </ul>
+   <div class="hidden md:flex space-x-4 items-center">
+    <a class="text-sm font-semibold text-[#ee4d2d] hover:underline" href="#">
+     Masuk ke Karir Shopee
+    </a>
+    <button class="text-sm font-semibold border border-[#ee4d2d] text-[#ee4d2d] rounded px-4 py-1 hover:bg-[#ee4d2d] hover:text-white transition">
+     Daftar ke Karir Shopee
+    </button>
+   </div>
+   <button class="md:hidden text-[#ee4d2d] focus:outline-none" id="mobile-menu-button">
+    <i class="fas fa-bars fa-lg">
+    </i>
+   </button>
+  </nav>
+  <!-- Mobile menu -->
+  <div class="hidden md:hidden bg-white border-b border-gray-200" id="mobile-menu">
+   <ul class="flex flex-col space-y-3 p-4 text-sm font-semibold text-[#222222]">
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Tentang Shopee
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Budaya Kerja
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Perjalanan Kami
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Nilai Kami
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Kantor Kami
+     </a>
+    </li>
+    <li>
+     <a class="block hover:text-[#ee4d2d]" href="#">
+      Jelajahi Life at Shopee
+     </a>
+    </li>
+    <li>
+     <a class="block text-[#ee4d2d] font-semibold" href="#">
+      Masuk ke Karir Shopee
+     </a>
+    </li>
+    <li>
+     <button class="w-full border border-[#ee4d2d] text-[#ee4d2d] rounded px-4 py-1 font-semibold hover:bg-[#ee4d2d] hover:text-white transition">
+      Daftar ke Karir Shopee
+     </button>
+    </li>
+   </ul>
+  </div>
+  <script>
+   const btn = document.getElementById('mobile-menu-button');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Hero Image -->
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mt-6">
+   <img alt="Interior office space with Shopee logo on the wall and a group of people walking" class="w-full rounded-lg object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/36c3ef8e-8b54-4436-e056-9b7eafcdc491.jpg" width="1200"/>
+  </section>
+  <!-- Intro Text -->
+  <section class="max-w-[900px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mt-10 text-center">
+   <h1 class="text-xl sm:text-2xl font-semibold text-[#222222] mb-4">
+    Shopee adalah platform belanja online terdepan di Asia Tenggara dan Taiwan.
+   </h1>
+   <p class="text-sm sm:text-base text-[#666666] leading-relaxed mb-6">
+    Shopee didirikan pada tahun 2015 dan dengan cepat menjadi platform e-commerce yang sangat populer di Asia Tenggara dan Taiwan. Kami berkomitmen untuk memberikan pengalaman berbelanja yang mudah, cepat, dan aman bagi jutaan pengguna kami.
+   </p>
+   <button class="bg-[#ee4d2d] text-white font-semibold rounded-full px-8 py-2 hover:bg-[#d43f22] transition">
+    Cari Lowongan
+   </button>
+  </section>
+  <!-- Budaya Kerja & Produk Kami -->
+  <section class="max-w-[900px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mt-16 grid grid-cols-1 md:grid-cols-2 gap-6">
+   <div class="border border-gray-300 rounded-lg p-6">
+    <h2 class="text-lg font-semibold text-[#222222] mb-3">
+     Budaya Kerja
+    </h2>
+    <p class="text-sm text-[#666666] leading-relaxed">
+     Kami percaya bahwa budaya kerja yang inklusif dan kolaboratif adalah kunci kesuksesan kami. Di Shopee, setiap suara didengar dan setiap ide dihargai.
+    </p>
+   </div>
+   <div class="border border-gray-300 rounded-lg p-6">
+    <h2 class="text-lg font-semibold text-[#222222] mb-3">
+     Produk Kami
+    </h2>
+    <p class="text-sm text-[#666666] leading-relaxed">
+     Shopee menawarkan berbagai produk mulai dari elektronik, fashion, hingga kebutuhan sehari-hari dengan harga terbaik dan layanan pengiriman cepat.
+    </p>
+   </div>
+  </section>
+  <!-- Core Values Section -->
+  <section class="max-w-[900px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mt-16">
+   <h2 class="text-center text-xl font-semibold text-[#222222] mb-8">
+    Core Values Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    <div class="border border-gray-300 rounded-lg p-6 text-center">
+     <img alt="Illustration of a hand holding a smartphone displaying the Shopee app" class="mx-auto mb-4" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f35a8e64-f6ce-4457-f888-068bd8e7c01c.jpg" width="150"/>
+     <h3 class="font-semibold text-[#222222] mb-2">
+      Cepat
+     </h3>
+     <p class="text-sm text-[#666666] leading-relaxed">
+      Kami selalu berusaha memberikan layanan yang cepat dan responsif untuk pelanggan dan karyawan kami.
+     </p>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-6 text-center">
+     <img alt="Illustration of diverse people cheering and celebrating together" class="mx-auto mb-4" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/79b2ead9-e2a7-4f38-7b23-d226f280b34d.jpg" width="150"/>
+     <h3 class="font-semibold text-[#222222] mb-2">
+      Strategis
+     </h3>
+     <p class="text-sm text-[#666666] leading-relaxed">
+      Kami mengambil keputusan berdasarkan data dan analisis untuk mencapai hasil terbaik.
+     </p>
+    </div>
+    <div class="border border-gray-300 rounded-lg p-6 text-center">
+     <img alt="Illustration of multiple hands joining together symbolizing teamwork" class="mx-auto mb-4" height="150" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2c8e83ff-8112-4816-e6df-b224766e332b.jpg" width="150"/>
+     <h3 class="font-semibold text-[#222222] mb-2">
+      Bersama-sama
+     </h3>
+     <p class="text-sm text-[#666666] leading-relaxed">
+      Kami percaya bahwa kerja sama tim adalah kunci untuk mencapai tujuan bersama.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Perjalanan Kami with timeline -->
+  <section class="max-w-[900px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mt-20">
+   <h2 class="text-2xl font-semibold text-[#222222] mb-8">
+    Perjalanan Kami
+   </h2>
+   <div class="timeline">
+    <!-- Item 1 -->
+    <div class="timeline-item">
+     <img alt="Person holding a Shopee box with a smile" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a344dedb-beeb-4cf5-45b1-c46e576db03f.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Luncurkan Shopee di 3 negara
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Malaysia, Indonesia, Thailand, Taiwan, Vietnam, dan Filipina.
+      </p>
+     </div>
+    </div>
+    <!-- Item 2 -->
+    <div class="timeline-item">
+     <img alt="Group photo of Shopee employees gathered for a company event" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/538f33d6-8faa-40cc-ebc1-2b5b1c165120.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Perkenalkan Shopee dalam 3 negara
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Perkenalkan Shopee dalam 3 negara dengan kampanye pemasaran yang inovatif dan menarik.
+      </p>
+     </div>
+    </div>
+    <!-- Item 3 -->
+    <div class="timeline-item">
+     <img alt="Shopee team having a meeting outdoors in a casual setting" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c5155a91-a20d-4bd2-bb8a-ce10290e7485.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Mengembangkan platform Shopee
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Mengembangkan platform Shopee dengan fitur-fitur baru yang memudahkan pengguna.
+      </p>
+     </div>
+    </div>
+    <!-- Item 4 -->
+    <div class="timeline-item">
+     <img alt="Person using Shopee app on a smartphone with a happy expression" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d35f74de-7452-4745-f948-d7cd7392bc00.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Memperkenalkan Shopee Mall ke berbagai wilayah
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Memperkenalkan Shopee Mall ke berbagai wilayah di Asia Tenggara dan Taiwan.
+      </p>
+     </div>
+    </div>
+    <!-- Item 5 -->
+    <div class="timeline-item">
+     <img alt="Logos of Shopee campaigns including Shopee Farm, Shopee 9.9, and Shopee 11.11" class="w-[150px] h-[100px] object-contain rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b5c99b0c-6631-495a-db19-e3f184b7d8a5.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Dengan peluncuran Lucky 7 dan yang lainnya
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Dengan peluncuran Lucky 7 dan yang lainnya, kami terus memperkuat posisi kami sebagai platform e-commerce terdepan.
+      </p>
+     </div>
+    </div>
+    <!-- Item 6 -->
+    <div class="timeline-item">
+     <img alt="Shopee employees working together in an office environment" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c54a6781-06ea-4fb4-9101-071068499286.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Memperkenalkan ShopeePay
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Memperkenalkan ShopeePay, layanan pembayaran digital yang memudahkan transaksi pengguna.
+      </p>
+     </div>
+    </div>
+    <!-- Item 7 -->
+    <div class="timeline-item">
+     <img alt="Shopee Live streaming event with hosts engaging with audience" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b3c41a05-b5da-4578-272a-2f7121edc0f1.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan Shopee Live dan streaming di dalam &amp; luar kantor
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan Shopee Live dan streaming di dalam &amp; luar kantor untuk meningkatkan interaksi dengan pengguna.
+      </p>
+     </div>
+    </div>
+    <!-- Item 8 -->
+    <div class="timeline-item">
+     <img alt="Aerial view of Shopee office building in Singapore" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/94d0b0b6-f8a0-479d-3831-a8d0f5bb20d4.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Membuka kantor pusat regional baru di Singapura
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Membuka kantor pusat regional baru di Singapura untuk memperkuat operasi di Asia Tenggara.
+      </p>
+     </div>
+    </div>
+    <!-- Item 9 -->
+    <div class="timeline-item">
+     <img alt="Black Friday Shopee campaign promotional image with a female presenter" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2d327fa5-e43e-41db-9a02-8eb1c5a09e18.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan kampanye Black Friday
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan kampanye Black Friday yang sukses besar dengan penawaran menarik.
+      </p>
+     </div>
+    </div>
+    <!-- Item 10 -->
+    <div class="timeline-item">
+     <img alt="Shopee Code 2020 event with airplane and celebration theme" class="w-[150px] h-[100px] object-contain rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/de0f188b-018a-46c6-f32f-0206bee9a8f3.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan Shopee Code 2020
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan Shopee Code 2020, acara tahunan yang menampilkan berbagai promosi dan hiburan.
+      </p>
+     </div>
+    </div>
+    <!-- Item 11 -->
+    <div class="timeline-item">
+     <img alt="Shopee Premium logo on a white background" class="w-[150px] h-[100px] object-contain rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e2af6222-a645-4629-5d01-7efd55b1496f.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan Shopee Premium
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan Shopee Premium untuk memberikan produk berkualitas tinggi kepada pelanggan.
+      </p>
+     </div>
+    </div>
+    <!-- Item 12 -->
+    <div class="timeline-item">
+     <img alt="We Are 5 Shopee anniversary celebration with employees" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/02884216-49fe-4147-5c9d-331bd79626e5.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Rayakan ulang tahun ke-5 Shopee
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Rayakan ulang tahun ke-5 Shopee dengan berbagai acara dan promosi menarik.
+      </p>
+     </div>
+    </div>
+    <!-- Item 13 -->
+    <div class="timeline-item">
+     <img alt="Group photo of Shopee employees in orange shirts" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/03b6e9e3-79c4-4c4a-3434-69b3c0f4c9c4.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan program Shopee untuk komunitas lokal
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan program Shopee untuk komunitas lokal guna mendukung UMKM dan pengusaha kecil.
+      </p>
+     </div>
+    </div>
+    <!-- Item 14 -->
+    <div class="timeline-item">
+     <img alt="Shopee employees collaborating in a modern office" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0c284725-9997-4dba-db2c-c524b87e8064.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan Shopee Live untuk Asia Tenggara dan Taiwan
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan Shopee Live untuk Asia Tenggara dan Taiwan, memperkuat interaksi dengan pengguna.
+      </p>
+     </div>
+    </div>
+    <!-- Item 15 -->
+    <div class="timeline-item">
+     <img alt="Shopee employees having a casual meeting in an office" class="w-[150px] h-[100px] object-cover rounded flex-shrink-0" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c111c076-ae36-4893-f534-56ff311bb7a6.jpg" width="150"/>
+     <div>
+      <h3 class="font-semibold text-[#222222] text-lg mb-1">
+       Meluncurkan Shopee Express untuk layanan pengiriman cepat
+      </h3>
+      <p class="text-sm text-[#666666] leading-relaxed">
+       Meluncurkan Shopee Express untuk layanan pengiriman cepat dan andal di seluruh wilayah operasi.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Nilai Kami -->
+  <section class="mt-20 bg-[#003366] text-white">
+   <div class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-16">
+    <h2 class="text-center text-2xl font-semibold mb-12">
+     Nilai Kami
+    </h2>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-10 mb-16">
+     <div class="flex flex-col items-center space-y-2 max-w-[140px]">
+      <img alt="Illustration of a person holding a flag symbolizing commitment" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6dd8021f-23fc-4a01-3a3e-aa1ca7e91922.jpg" width="80"/>
+      <p class="text-center font-semibold text-lg">
+       Kami Berkomitmen
+      </p>
+     </div>
+     <div class="flex flex-col items-center space-y-2 max-w-[140px]">
+      <img alt="Illustration of a person bowing symbolizing humility" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c7100277-b783-4d84-06e3-2c4c15abdbe5.jpg" width="80"/>
+      <p class="text-center font-semibold text-lg">
+       Kami Rendah Hati
+      </p>
+     </div>
+     <div class="flex flex-col items-center space-y-2 max-w-[140px]">
+      <img alt="Illustration of a person running symbolizing agility" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8220f0c0-6130-47ca-7e02-55c954e9b86f.jpg" width="80"/>
+      <p class="text-center font-semibold text-lg">
+       Kami Berlari
+      </p>
+     </div>
+     <div class="flex flex-col items-center space-y-2 max-w-[140px]">
+      <img alt="Illustration of a person adapting to change symbolizing adaptability" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8f662f81-fe80-4684-9cbf-85983ba27697.jpg" width="80"/>
+      <p class="text-center font-semibold text-lg">
+       Kami Beradaptasi
+      </p>
+     </div>
+     <div class="flex flex-col items-center space-y-2 max-w-[140px]">
+      <img alt="Illustration of a person helping others symbolizing service" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0d28f03c-a2f8-4956-1949-e14125988054.jpg" width="80"/>
+      <p class="text-center font-semibold text-lg">
+       Kami Melayani
+      </p>
+     </div>
+    </div>
+    <blockquote class="bg-[#ee4d2d] rounded-lg p-8 text-white text-center text-lg italic max-w-4xl mx-auto">
+     “Memahami manusia adalah kunci dari kesempurnaan yang sukses. Di Shopee, kami percaya bahwa memberi
+        pengalaman terbaik untuk karyawan, mitra dan pengguna adalah hal yang krusial.”
+    </blockquote>
+   </div>
+  </section>
+  <!-- Kantor-Kantor Kami -->
+  <section class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 py-16">
+   <h2 class="text-center text-2xl font-semibold text-[#222222] mb-12">
+    Kantor-Kantor Kami
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-8 text-center text-[#666666]">
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Jakarta office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d5a44e92-0f3a-4915-ed36-cb61923dbdba.jpg" width="60"/>
+     <p class="text-sm">
+      Jakarta, Indonesia
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Singapore office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/624a9ea2-3420-41e0-982f-c625b44ac609.jpg" width="60"/>
+     <p class="text-sm">
+      Singapore
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Bangkok office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/975c89e8-d69b-4921-803c-7dc6a5514c56.jpg" width="60"/>
+     <p class="text-sm">
+      Bangkok, Thailand
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Taipei office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/92d8f13c-aed5-49d3-8913-bccc91dd896a.jpg" width="60"/>
+     <p class="text-sm">
+      Taipei, Taiwan
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Manila office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/46c64ec1-7f3c-4817-7317-ecf333883004.jpg" width="60"/>
+     <p class="text-sm">
+      Manila, Philippines
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Kuala Lumpur office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/df7de56c-a330-4eca-26c9-b0b5aeb9eb11.jpg" width="60"/>
+     <p class="text-sm">
+      Kuala Lumpur, Malaysia
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Ho Chi Minh office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1131c104-2fcf-4f1f-684b-f929605342e6.jpg" width="60"/>
+     <p class="text-sm">
+      Ho Chi Minh, Vietnam
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Hanoi office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c9518ac9-98eb-4cfb-fdac-e67bee7789c6.jpg" width="60"/>
+     <p class="text-sm">
+      Hanoi, Vietnam
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Penang office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb28f94e-44a6-4f76-7ad1-4828352fa363.jpg" width="60"/>
+     <p class="text-sm">
+      Penang, Malaysia
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Surabaya office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/29dc499d-661e-45ea-75a2-87ef963c7e04.jpg" width="60"/>
+     <p class="text-sm">
+      Surabaya, Indonesia
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Medan office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3c4d22c4-bff6-4af3-36bb-e73026d8c8fc.jpg" width="60"/>
+     <p class="text-sm">
+      Medan, Indonesia
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-2">
+     <img alt="Icon representing Penang office building" class="w-12 h-12 mb-1" height="60" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cb28f94e-44a6-4f76-7ad1-4828352fa363.jpg" width="60"/>
+     <p class="text-sm">
+      Penang, Malaysia
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Jelajahi Life at Shopee -->
+  <section class="relative max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 mb-20">
+   <img alt="People in a meeting room with glass wall and a person presenting" class="w-full rounded-lg object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9dcabda7-e8db-4421-fe59-528bba7c1b01.jpg" width="1200"/>
+   <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-lg flex flex-col justify-center px-6 sm:px-12">
+    <h2 class="text-white text-3xl sm:text-4xl font-semibold max-w-lg mb-4">
+     Jelajahi Life at Shopee
+    </h2>
+    <p class="text-white max-w-md mb-6">
+     Temukan bagaimana rasanya bekerja di Shopee dan budaya kerja yang kami bangun bersama.
+    </p>
+    <button class="bg-[#ee4d2d] text-white font-semibold rounded-full px-8 py-2 w-max hover:bg-[#d43f22] transition">
+     Lihat Life at Shopee
+    </button>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-[#f8f8f8] border-t border-gray-300 py-10">
+   <div class="max-w-[1200px] mx-auto px-4 sm:px-6 md:px-10 lg:px-20 flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+    <div class="flex items-center space-x-3">
+     <img alt="Shopee Logo" class="h-8 w-auto" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Shopee_logo.svg"/>
+     <span class="font-semibold text-[#ee4d2d] text-xl">
+      Karir
+     </span>
+    </div>
+    <div class="flex space-x-6 text-[#666666] text-sm">
+     <a aria-label="Facebook" class="hover:text-[#ee4d2d]" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-[#ee4d2d]" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-[#ee4d2d]" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-[#ee4d2d]" href="#">
+      <i class="fab fa-linkedin-in">
+      </i>
+     </a>
+     <a aria-label="YouTube" class="hover:text-[#ee4d2d]" href="#">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+    </div>
+    <div class="text-[#666666] text-xs text-center md:text-right max-w-xs">
+     © 2024 Shopee. All rights reserved.
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
