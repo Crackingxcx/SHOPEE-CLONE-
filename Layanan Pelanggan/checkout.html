@@ -1,0 +1,511 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee Pusat Bantuan
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-3 border-b border-gray-200">
+   <div class="flex items-center space-x-2">
+    <img alt="Shopee logo, orange square with white S letter" class="inline-block" height="24" src="https://storage.googleapis.com/a1aa/image/9c51adf8-fda6-41b2-ec68-e439dfad64b0.jpg" width="24"/>
+    <span class="text-orange-600 font-semibold text-base">
+     Shopee
+    </span>
+    <span class="text-orange-400 text-sm">
+     Pusat Bantuan
+    </span>
+   </div>
+   <div class="text-xs text-gray-700">
+    Kebijakan Shopee
+   </div>
+  </header>
+  <!-- Hero search section -->
+  <section class="bg-[#F15A29] py-10 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40">
+   <h1 class="text-white text-center text-xl sm:text-2xl font-normal mb-6">
+    Hai, ada yang bisa kami bantu?
+   </h1>
+   <form class="max-w-3xl mx-auto">
+    <div class="relative">
+     <input class="w-full rounded border border-white bg-white text-gray-400 placeholder-gray-400 py-2.5 px-4 pr-12 text-base focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-orange-400" placeholder="Mencari..." type="text"/>
+     <button aria-label="Search" class="absolute right-1 top-1/2 -translate-y-1/2 bg-[#F15A29] text-white p-2 rounded border border-white hover:bg-[#d94e22] focus:outline-none focus:ring-2 focus:ring-orange-400" type="submit">
+      <i class="fas fa-search">
+      </i>
+     </button>
+    </div>
+   </form>
+  </section>
+  <!-- Main content -->
+  <main class="max-w-7xl mx-auto px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 py-10">
+   <div class="flex flex-col md:flex-row md:space-x-10">
+    <!-- Left menu -->
+    <nav class="flex-shrink-0 w-full md:w-64 text-sm text-gray-900">
+     <ul class="space-y-3">
+      <li>
+       <button aria-controls="menu-belanja" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="toggleBelanja" type="button">
+        Belanja di Shopee
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconBelanja">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-belanja">
+        <li>
+         <a aria-current="page" class="text-[#F15A29] block" href="checkout.html">
+          Checkout
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Shopee Mall
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Pencarian
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Paling Populer
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-penawaran" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="togglePenawaran" type="button">
+        Penawaran &amp; Hadiah
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconPenawaran">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-penawaran">
+        <li>
+         <a class="block" href="#">
+          Promosi
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Program Hadiah
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-pembayaran" aria-expanded="true" class="font-semibold flex items-center justify-between w-full" id="togglePembayaran" type="button">
+        Pembayaran
+        <i class="fas fa-chevron-up text-xs ml-2" id="iconPembayaran">
+        </i>
+       </button>
+       <ul class="mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-pembayaran">
+        <li>
+          <a class="block" href="bantuan.html">
+          Metode Pembayaran
+         </a>
+        </li>
+        <li>
+          <a class="block" href="pajak.html">
+          Pajak
+         </a>
+        </li>
+        <li>
+          <a class="block" href="koin_shopee.html">
+          Koin Shopee
+         </a>
+        </li>
+        <li>
+          <a class="block" href="spaylater.html">
+          SPayLater/SPinjam/Dana Cepat
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-pesanan" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="togglePesanan" type="button">
+        Pesanan &amp; Pengiriman
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconPesanan">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-pesanan">
+        <li>
+         <a class="block" href="#">
+          Pesanan
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Pengiriman Pesanan
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Layanan Pengiriman
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Penilaian Ulasan
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-pengembalian" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="togglePengembalian" type="button">
+        Pengembalian Barang &amp; Dana
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconPengembalian">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-pengembalian">
+        <li>
+         <a class="block" href="#">
+          Pengajuan Komplain
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Resolusi
+         </a>
+        </li>
+        <li>
+         <a class="block" href="#">
+          Banding
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-informasi" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="toggleInformasi" type="button">
+        Informasi Umum
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconInformasi">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-informasi">
+        <li>
+          <a class="block" href="akun-shopee.html">
+          Akun Shopee
+         </a>
+        </li>
+        <li>
+         <a class="block" href="situs-shopee.html">
+          Situs Shopee
+         </a>
+        </li>
+        <li>
+         <a class="block" href="panduan.html">
+          Panduan
+         </a>
+        </li>
+        <li>
+         <a class="block" href="kebijakan.html">
+          Kebijakan
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-shopeefood" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="toggleShopeefood" type="button">
+        ShopeeFood
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconShopeefood">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-shopeefood">
+        <li>
+         <a class="block" href="#">
+          ShopeeFood Buyer
+         </a>
+        </li>
+        <li>
+         <a class="block" href="shopeefood-merchant.html">
+          ShopeeFood Merchant
+         </a>
+        </li>
+        <li>
+         <a class="block" href="shopeefood-buyer.html">
+          ShopeeFood Buyer
+         </a>
+        </li>
+       </ul>
+      </li>
+      <li>
+       <button aria-controls="menu-shopeepay" aria-expanded="false" class="font-semibold flex items-center justify-between w-full" id="toggleShopeePay" type="button">
+        ShopeePay
+        <i class="fas fa-chevron-down text-xs ml-2" id="iconShopeePay">
+        </i>
+       </button>
+       <ul class="hidden mt-2 ml-4 space-y-1 text-xs text-gray-600" id="menu-shopeepay">
+        <li>
+         <a class="block" href="shopeepay-pengguna.html">
+          ShopeePay Pengguna
+         </a>
+        </li>
+        <li>
+         <a class="block" href="shopeepay-merchant.html">
+          ShopeePay Merchant
+         </a>
+        </li>
+       </ul>
+      </li>
+     </ul>
+    </nav>
+    <!-- Right content -->
+    <section class="flex-1 mt-8 md:mt-0">
+     <h2 class="font-semibold text-lg mb-6">
+      Checkout
+     </h2>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Akun Saya] Bagaimana cara mengubah/memperbarui nomor telepon saya?
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [ShopeePay] apakah saya bisa melihat rincian transaksi di halaman seabank x shopeepay account linkage?
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Akun Saya] mengapa saya tidak menerima kode verifikasi OTP melalui sms/whatsapp
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Akun Saya] bagaimana cara mengubah password akun shopee?
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Notifikasi] mengapa saya mendapatkan pemberitahuan tentang interaksi mencurigakan dengan penjual?
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Aktivasi ShopeePay] bagimana cara mengajukan SJaminan BPKB?
+      </li>
+     </ul>
+     <ul class="text-gray-700 text-sm space-y-4">
+      <li class="border-b border-gray-200 pb-3">
+       [Aktivasi ShopeePay] bagaimana cara mengubah data diri SPinjam?
+      </li>
+     </ul>
+     <nav class="mt-8 flex justify-end space-x-3 text-xs text-gray-500">
+      <a class="text-[#F15A29]" href="#">
+       1
+      </a>
+      <a class="hover:text-[#F15A29]" href="#">
+       2
+      </a>
+      <a class="hover:text-[#F15A29]" href="#">
+       3
+      </a>
+      <a class="hover:text-[#F15A29]" href="#">
+       4
+      </a>
+      <a class="hover:text-[#F15A29]" href="#">
+       5
+      </a>
+      <a class="hover:text-[#F15A29]" href="#">
+       6
+      </a>
+     </nav>
+    </section>
+   </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 px-6 sm:px-10 md:px-20 lg:px-32 xl:px-40 text-xs text-gray-600">
+   <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between space-y-3 md:space-y-0">
+    <div class="flex flex-wrap items-center space-x-2 text-gray-600">
+     <a class="hover:underline" href="#">
+      Kebijakan Shopee
+     </a>
+     <span class="mx-2">
+      |
+     </span>
+     <a class="hover:underline" href="#">
+      Persyaratan Layanan
+     </a>
+     <span class="mx-2">
+      |
+     </span>
+     <a class="hover:underline" href="#">
+      Kebijakan Privasi
+     </a>
+    </div>
+    <div class="text-gray-500 text-[10px] mt-2 md:mt-0">
+     © 2020 Sea Group. Hak cipta dilindungi undang-undang.
+    </div>
+    <div class="flex space-x-3 mt-2 md:mt-0">
+     <a aria-label="Facebook" class="text-gray-600 hover:text-gray-800" href="#">
+      <i class="fab fa-facebook-f text-sm">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="text-gray-600 hover:text-gray-800" href="#">
+      <i class="fab fa-instagram text-sm">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Toggle Pembayaran menu
+    const togglePembayaranBtn = document.getElementById('togglePembayaran');
+    const menuPembayaran = document.getElementById('menu-pembayaran');
+    const iconPembayaran = document.getElementById('iconPembayaran');
+
+    togglePembayaranBtn.addEventListener('click', () => {
+      const expanded = togglePembayaranBtn.getAttribute('aria-expanded') === 'true';
+      togglePembayaranBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuPembayaran.style.display = 'none';
+        iconPembayaran.classList.remove('fa-chevron-up');
+        iconPembayaran.classList.add('fa-chevron-down');
+      } else {
+        menuPembayaran.style.display = 'block';
+        iconPembayaran.classList.remove('fa-chevron-down');
+        iconPembayaran.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle Belanja di Shopee menu
+    const toggleBelanjaBtn = document.getElementById('toggleBelanja');
+    const menuBelanja = document.getElementById('menu-belanja');
+    const iconBelanja = document.getElementById('iconBelanja');
+
+    toggleBelanjaBtn.addEventListener('click', () => {
+      const expanded = toggleBelanjaBtn.getAttribute('aria-expanded') === 'true';
+      toggleBelanjaBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuBelanja.style.display = 'none';
+        iconBelanja.classList.remove('fa-chevron-up');
+        iconBelanja.classList.add('fa-chevron-down');
+      } else {
+        menuBelanja.style.display = 'block';
+        iconBelanja.classList.remove('fa-chevron-down');
+        iconBelanja.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle Penawaran & Hadiah menu
+    const togglePenawaranBtn = document.getElementById('togglePenawaran');
+    const menuPenawaran = document.getElementById('menu-penawaran');
+    const iconPenawaran = document.getElementById('iconPenawaran');
+
+    togglePenawaranBtn.addEventListener('click', () => {
+      const expanded = togglePenawaranBtn.getAttribute('aria-expanded') === 'true';
+      togglePenawaranBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuPenawaran.style.display = 'none';
+        iconPenawaran.classList.remove('fa-chevron-up');
+        iconPenawaran.classList.add('fa-chevron-down');
+      } else {
+        menuPenawaran.style.display = 'block';
+        iconPenawaran.classList.remove('fa-chevron-down');
+        iconPenawaran.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle Pesanan & Pengiriman menu
+    const togglePesananBtn = document.getElementById('togglePesanan');
+    const menuPesanan = document.getElementById('menu-pesanan');
+    const iconPesanan = document.getElementById('iconPesanan');
+
+    togglePesananBtn.addEventListener('click', () => {
+      const expanded = togglePesananBtn.getAttribute('aria-expanded') === 'true';
+      togglePesananBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuPesanan.style.display = 'none';
+        iconPesanan.classList.remove('fa-chevron-up');
+        iconPesanan.classList.add('fa-chevron-down');
+      } else {
+        menuPesanan.style.display = 'block';
+        iconPesanan.classList.remove('fa-chevron-down');
+        iconPesanan.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle Pengembalian Barang & Dana menu
+    const togglePengembalianBtn = document.getElementById('togglePengembalian');
+    const menuPengembalian = document.getElementById('menu-pengembalian');
+    const iconPengembalian = document.getElementById('iconPengembalian');
+
+    togglePengembalianBtn.addEventListener('click', () => {
+      const expanded = togglePengembalianBtn.getAttribute('aria-expanded') === 'true';
+      togglePengembalianBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuPengembalian.style.display = 'none';
+        iconPengembalian.classList.remove('fa-chevron-up');
+        iconPengembalian.classList.add('fa-chevron-down');
+      } else {
+        menuPengembalian.style.display = 'block';
+        iconPengembalian.classList.remove('fa-chevron-down');
+        iconPengembalian.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle Informasi Umum menu
+    const toggleInformasiBtn = document.getElementById('toggleInformasi');
+    const menuInformasi = document.getElementById('menu-informasi');
+    const iconInformasi = document.getElementById('iconInformasi');
+
+    toggleInformasiBtn.addEventListener('click', () => {
+      const expanded = toggleInformasiBtn.getAttribute('aria-expanded') === 'true';
+      toggleInformasiBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuInformasi.style.display = 'none';
+        iconInformasi.classList.remove('fa-chevron-up');
+        iconInformasi.classList.add('fa-chevron-down');
+      } else {
+        menuInformasi.style.display = 'block';
+        iconInformasi.classList.remove('fa-chevron-down');
+        iconInformasi.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle ShopeeFood menu
+    const toggleShopeefoodBtn = document.getElementById('toggleShopeefood');
+    const menuShopeefood = document.getElementById('menu-shopeefood');
+    const iconShopeefood = document.getElementById('iconShopeefood');
+
+    toggleShopeefoodBtn.addEventListener('click', () => {
+      const expanded = toggleShopeefoodBtn.getAttribute('aria-expanded') === 'true';
+      toggleShopeefoodBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuShopeefood.style.display = 'none';
+        iconShopeefood.classList.remove('fa-chevron-up');
+        iconShopeefood.classList.add('fa-chevron-down');
+      } else {
+        menuShopeefood.style.display = 'block';
+        iconShopeefood.classList.remove('fa-chevron-down');
+        iconShopeefood.classList.add('fa-chevron-up');
+      }
+    });
+
+    // Toggle ShopeePay menu
+    const toggleShopeePayBtn = document.getElementById('toggleShopeePay');
+    const menuShopeePay = document.getElementById('menu-shopeepay');
+    const iconShopeePay = document.getElementById('iconShopeePay');
+
+    toggleShopeePayBtn.addEventListener('click', () => {
+      const expanded = toggleShopeePayBtn.getAttribute('aria-expanded') === 'true';
+      toggleShopeePayBtn.setAttribute('aria-expanded', !expanded);
+      if (expanded) {
+        menuShopeePay.style.display = 'none';
+        iconShopeePay.classList.remove('fa-chevron-up');
+        iconShopeePay.classList.add('fa-chevron-down');
+      } else {
+        menuShopeePay.style.display = 'block';
+        iconShopeePay.classList.remove('fa-chevron-down');
+        iconShopeePay.classList.add('fa-chevron-up');
+      }
+    });
+  </script>
+ </body>
+</html>
