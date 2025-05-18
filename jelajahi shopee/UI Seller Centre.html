@@ -1,0 +1,71 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee QR Verification
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f5f5f5] min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-4 md:px-8 h-14 bg-white border-b border-gray-200">
+   <div class="flex items-center space-x-2">
+    <img alt="Shopee logo, orange square with white S letter" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/bdc17db6-9e29-471b-3536-5629041c63b9.jpg" width="24"/>
+    <span class="text-[#ee4d2d] font-normal text-sm md:text-base">
+     Shopee
+    </span>
+   </div>
+   <div class="flex items-center space-x-2 text-sm text-gray-700">
+    <img alt="User profile picture, round avatar with black background and white letter U" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/76606e1a-0455-429b-55ca-fb859fbea63c.jpg" width="32"/>
+    <span>
+     123soerya.id
+    </span>
+    <i class="fas fa-chevron-down text-gray-400">
+    </i>
+   </div>
+  </header>
+  <!-- Main content wrapper -->
+  <main class="flex-1 flex justify-center items-center p-4 md:p-8">
+   <div class="bg-white w-full max-w-4xl h-[480px] flex justify-center items-center">
+    <div class="text-center">
+     <img alt="QR code black and white square pattern for scanning" class="mx-auto mb-4" height="120" src="https://storage.googleapis.com/a1aa/image/c1c47f72-3120-43ce-d19a-232a0ded7067.jpg" width="120"/>
+     <h2 class="text-[#ee4d2d] font-semibold text-base md:text-lg mb-1">
+      Verifikasi Data Diri
+     </h2>
+     <p class="text-gray-600 text-xs md:text-sm leading-tight max-w-xs mx-auto">
+      Silakan scan kode QR di atas dengan menggunakan
+      <br/>
+      Aplikasi Shopee untuk verifikasi data diri.
+     </p>
+    </div>
+   </div>
+  </main>
+  <!-- Right vertical icons with white background boxes -->
+  <aside class="fixed top-20 right-0 flex flex-col space-y-6 pr-2 z-10">
+   <button aria-label="Notification" class="text-[#ee4d2d] hover:text-[#c43d23] transition text-xl bg-white p-2 rounded shadow-sm" type="button">
+    <i class="fas fa-bell">
+    </i>
+   </button>
+   <button aria-label="Support" class="text-[#ee4d2d] hover:text-[#c43d23] transition text-xl bg-white p-2 rounded shadow-sm" type="button">
+    <i class="fas fa-headset">
+    </i>
+   </button>
+   <button aria-label="Chat" class="relative text-[#ee4d2d] hover:text-[#c43d23] transition text-xl bg-white p-2 rounded shadow-sm" type="button">
+    <i class="fas fa-comment-alt">
+    </i>
+    <span class="absolute -top-1 -right-2 bg-[#ee4d2d] text-white text-[10px] font-semibold rounded-full w-4 h-4 flex items-center justify-center leading-none">
+     1
+    </span>
+   </button>
+  </aside>
+ </body>
+</html>
