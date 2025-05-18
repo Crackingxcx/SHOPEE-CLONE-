@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.0.0-beta2/css/all.css">
+    <title>Shopee</title>
+</head>
+<body>
+
+    <div class="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="grid">
+                <!-- Navbar -->
+                <div class="navbar grid__full-width s-grid__full-width ss-grid__full-width">
+                    <ul class="navbar__left">
+                        <li class="navbar--button">
+                            <a href="#" class="navbar__left--link navbar__left--border">Saluran Penjual</a>
+                        </li>
+                        <!-- <li>
+                            <a href="https://shopee.vn/m/sell-on-shopee" class="navbar__left--link navbar__left--border">Menjadi Penjual Shopee</a>
+                        </li> -->
+                        <li class="navbar--button">
+                            <a href="#" target="_blank" class="navbar__left--link navbar__left--border">Unduh Aplikasi</a>
+                            <div class="subnav__download navbar__subnav">
+                                <a href="" target="_blank" >
+                                    <img src="assets/QRcodeShopee.png" alt="download_qr_code" class="subnav__download--qrcode">
+                                    <div class="subnav__store">
+                                        <img src="assets/ios.png" class="subnav__store--icon" alt="">
+                                        <img src="assets/android.png" class="subnav__store--icon" alt="">
+                                        <img src="assets/appgallery.png" class="subnav__store--icon" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="navbar--button"><div class="navbar__left--item">Hubungkan</div></li>
+                        <li class="navbar--button">
+                            <div class="navbar__left--item">
+                                <img src="assets/facebook.png" alt="" class="navbar__left--icon fab fa-facebook" title="logo Facebook">
+                                <img src="assets/instagram.png" alt="" class="navbar__left--icon fab fab fa-instagram" title="logo Instagram">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar__right">
+
+                        <!-- Usermode-notify -->
+                        <li class="usermode usermode__notify navbar--button navbar__right--notify">
+                            <a href="" class="navbar__right--item navbar__right--link">
+                                <i class="far fa-bell navbar__right--icon"></i>
+                                <div class="navbar__right--notify-label">2</div>Notifikasi
+                            </a>
+                            <div class="user__notify navbar__subnav">
+                                <div class="user__notify-heading">Notifikasi baru diterima</div>
+                                <div class="user__notify-container">
+                                    <div class="user__notify-container--item">
+                                        <div class="user__notify-container--item-img" style="background-image: url(assets/giftbox.jfif); background-size: contain; background-repeat: no-repeat; flex: 0 0 auto;"></div>
+                                        <div class="user__notify-container--item-main">
+                                            <div class="user__notify-container--item-title">Voucher spesial awal bulan untukmu</div>
+                                            <div class="user__notify-container--item-detail">"💥 Dapatkan Voucher 30K 🌈 Sudah tersedia di dompet voucher kamu 👉 Stok terbatas - Gunakan sekarang juga!"</div>
+                                        </div>
+                                    </div>
+                                    <div class="user__notify-container--item">
+                                        <div class="user__notify-container--item-img" style="background-image: url(assets/voucher.png); background-size: contain; background-repeat: no-repeat; flex: 0 0 auto;"></div>
+                                        <div class="user__notify-container--item-main">
+                                            <div class="user__notify-container--item-title">Berburu promo kebutuhan sehari-hari, semua ada!</div>
+                                            <div class="user__notify-container--item-detail">✨ Voucher spesial hingga 100K 💥 Promo jam emas di bawah 11K 😍 Produk terlaris diskon 50% 🛒 Belanja sekarang sebelum kehabisan</div>
+                                        </div>
+                                    </div>
+                                    <div class="user__notify-container--item">
+                                        <div class="user__notify-container--item-img" style="background-image: url(assets/eardrop.jfif); background-size: contain; background-repeat: no-repeat; flex: 0 0 auto;"></div>
+                                        <div class="user__notify-container--item-main">
+                                            <div class="user__notify-container--item-title">Bagikan ulasan tentang produk</div>
+                                            <div class="user__notify-container--item-detail">
+                                                Pesanan <b>211024PHRRT7AE</b> telah selesai. Silakan berikan ulasan sebelum <b>16-11-2021</b> untuk mendapatkan <b>200</b> koin dan membantu pengguna lain mengetahui lebih banyak tentang produk ini!
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="user__notify-footer">
+                                    <a href="">Lihat semuanya</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Help -->
+                        <li class="navbar--button">
+                            <a href="#" class="navbar__right--link"><i class="far fa-question-circle navbar__right--icon"></i>Mendukung</a>
+                        </li>
+
+                        <!-- Guestmode Log -->
+                        <!-- <li><a href="" class="navbar__right--link navbar__right--border">Đăng ký</a></li>
+                        <li><a href="" class="navbar__right--link">Đăng nhập</a></li> -->
+
+                        <!-- Usermode Log -->
+                        <li class="usermode navbar--button">
+                            <a href="#" class="usermode__log">
+                                <img class="usermode--uicon" src="assets/usertna.jfif" alt="">
+                                <p class="navbar__right--link usermode--name ">Raka Bondol</p>
+                            </a>
+                            <ul class="usermode__menu navbar__subnav">
+                                <li class="usermode__menu--item">
+                                    <a href="#">Akun Saya</a>
+                                </li>
+                                <li class="usermode__menu--item">
+                                    <a href="#">Pesanan Saya</a>
+                                </li>
+                                <li class="usermode__menu--item">
+                                    <a href="#">Keluar</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Nav search -->
+                <div class="navsearch">
+                    <div class="navsearch__search-m">
+                        <label for="mobile-search-checkbox">
+                            <i class="fas fa-search navsearch__search-m--icon"></i>
+                        </label>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox">
+
+                    <div class="navsearch__logo">
+                        <a href="Homepage.html">
+                            <i class="fa-brands fa-shopify navsearch__logo--icon"></i>
+                            <div class="navsearch__logo--name hide-on-tablet">Shopee</div>
+                        </a>
+                    </div>
+                    <div class="navsearch__with-search">
+                        <div class="navsearch__searchbar">
+                            <form action="" class="navsearch__searchbar--main">
+                                <input type="text" class="navsearch__searchbar--input" placeholder="cari produk yang kamu inginkan"> 
+                                <div class="navsearch__history">
+                                    <div class="navsearch__history--content">
+                                        <a href="#" class="navsearch__history--prefill">
+                                            Merek penjualan super
+                                            <img src="assets/supersale.png" alt="">
+                                        </a>
+                                        <a href="#" class="navsearch__history--text">Earphone</a>
+                                    </div>
+                                </div> 
+                            </form>
+                            <div class="wtosearch navbar--button">
+                                <div class="wtosearch__option">
+                                    <p class="wtosearch__option--label">Di Toko Ini</p>
+                                    <i class="fas fa-angle-down wtosearch__option--icon"></i>
+                                </div>
+                                
+                                <ul class="wtosearch--list navbar__subnav">
+                                    <li class="wtosearch--item">Di Toko Ini <i class="fas fa-check wtosearch--selected"></i></li>
+                                    <li class="wtosearch--item">Di Shopee</li>
+                                </ul>
+                            </div>
+                            <button class="navsearch__searchbar--searchbtn"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="navsearch__recommend hide-on-tablet hide-on-mobile">
+                            <a href="" class="navsearch__recommend--button">Jaket</a>
+                            <a href="" class="navsearch__recommend--button">Gaun</a>
+                            <a href="" class="navsearch__recommend--button">Celana</a>
+                            <a href="" class="navsearch__recommend--button">Headphone</a>
+                            <a href="" class="navsearch__recommend--button">Tas Wanita</a>
+                            <a href="" class="navsearch__recommend--button">Rok</a>
+                            <a href="" class="navsearch__recommend--button">Sandal</a>
+                            <a href="" class="navsearch__recommend--button">Kapas Pembersih</a>
+                        </div>
+                    </div>
+                    <div class="navsearch__cart">
+                        <div class="navsearch__cart--block navbar--button">
+                            <a href="#">
+                                <i class="fas fa-cart-arrow-down navsearch__cart--icon"></i>
+                            </a>
+                            <div class="usermode navsearch__cart--label">3</div>
+                            <!-- Cart Logout -->
+                            <!-- <div class="navsearch__cart--logout navbar__subnav">
+                                <div class="navsearch__cart--logout-icon"></div>
+                                <p class="navsearch__cart--logout-text">Chưa có sản phẩm</p>
+                            </div> -->
+                            <!-- Cart Login -->
+                            <div class="usermode navsearch__cart--login navbar__subnav">
+                                <div class="navsearch__cart--header hide-on-mobile">Produk baru ditambahkan</div>
+                                <div class="navsearch__cart--body hide-on-mobile">
+                                    <a class="navsearch__cart--item" href="#">
+                                        <div class="navsearch__cart--image navsearch__cart--image-1"> </div>
+                                        <div class="navsearch__cart--name">solder 80watt murah </div>
+                                        <div class="navsearch__cart--price">Rp133.000</div>
+                                    </a>
+                                    <div class="navsearch__cart--item">
+                                        <div class="navsearch__cart--image navsearch__cart--image-2"></div>
+                                        <div class="navsearch__cart--name">Baju Anak-anak logo arduino</div>
+                                        <div class="navsearch__cart--price">Rp140.000</div>
+                                    </div>
+                                    <div class="navsearch__cart--item">
+                                        <div class="navsearch__cart--image navsearch__cart--image-3"></div>
+                                        <div class="navsearch__cart--name">celana pendek terlalu pendek</div>
+                                        <div class="navsearch__cart--price">Rp92.000</div>
+                                    </div>
+                                </div>
+                                <div class="navsearch__cart--footer hide-on-mobile">
+                                    <div class="navsearch__cart--footer-btn">Lihat keranjang</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="user-mobile">
+                            <i class="fas fa-user user-mobile"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Header sortbar mobile -->
+        <ul class="header__sortbar">
+            <li class="header__sortbar--item">
+            <a href="" class="header__sortbar--link header__sortbar--active">Terkait</a>
+            </li>
+            <li class="header__sortbar--item">
+            <a href="" class="header__sortbar--link">Terbaru</a>
+            </li>
+            <li class="header__sortbar--item">
+            <a href="" class="header__sortbar--link">Terlaris</a>
+            </li>
+            <li class="header__sortbar--item">
+            <a href="" class="header__sortbar--link">Harga</a>
+            </li>
+        </ul>
+
+
+
+        <!-- Main -->
+        <div class="app">
+            <div class="grid">
+            <div class="app-sell grid__row">
+                <div class="sidepage-filter grid__column-2 m-grid__column-2 s-grid__full-width ss-grid__full-width">
+                <div class="seller-info s-grid__column-3 hide-on-mobile">
+                    <div class="seller-info__avatar"></div>
+                    <div class="seller-infor__details">
+                    <h3 class="seller-infor__name">Raka Satria</h3>
+                    <p class="seller-info__active-time">
+                        <i class="fas fa-circle seller-info__active--icon"></i>Sedang aktif
+                    </p>
+                    </div>
+                </div>
+                <div class="shop-category s-grid__column-9">
+                    <h3 class="shop-category--header hide-on-mobile">Kategori Toko</h3>
+                    <div class="shop-category--main">
+                    <div class="shop-category--title hide-on-mobile">
+                        <i class="fas fa-list-ul shop-category--icon"></i>
+                        <h4 >Produk</h4>
+                    </div>
+                    <ul class="shop-category--list ss-grid__full-width">
+                        <li class="shop-category--item">Sepatu olahraga & sneaker</li>
+                        <li class="shop-category--item">Sepatu pria</li>
+                        <li class="shop-category--item">Sepatu wanita</li>
+                        <li class="shop-category--item">Boot</li>
+                        <li class="shop-category--item">Sandal</li>
+                        <li class="shop-category--item">Kaos kaki</li>
+                        <li class="shop-category--item">Sarang lebah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=".grid__row grid__column-10 m-grid__column-8 s-grid__full-width ss-grid__full-width">
+                        <!-- Sort bar -->
+                        <div class="sortbar ss-grid__full-width hide-on-mobile">
+                            <p class="sortbar--label">Urutkan berdasarkan</p>
+                            <div class="sortbar__option">
+                                <p class="sortbar__option--item sortbar__option--selected">Populer</p>
+                                <p class="sortbar__option--item">Terbaru</p>
+                                <p class="sortbar__option--item">Terlaris</p>
+                                <div class="status-box navbar--button">
+                                    <p class="status-box--placeholder">Harga</p>
+                                    <i class="fas fa-chevron-down status-box--arrow-down"></i>
+                                    <div class="status-box--menu navbar__subnav">
+                                        <p>Harga: Rendah ke Tinggi</p>
+                                        <p>Harga: Tinggi ke Rendah</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mini-page-controller hide-on-mobile">
+                                <span class="mini-page-controller--current">1</span>
+                                <span class="mini-page-controller--total">/9</span>
+                                <div class="mini-page-controller--pre mini-page-controller--disabled">
+                                    <i class="fas fa-chevron-left "></i>
+                                </div>
+                                <div class="mini-page-controller--next">
+                                    <i class="fas fa-chevron-right "></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product -->
+                        <div class="grid__row product">
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    <div class="product__img" style="background-image: url(assets/boot.jpg);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sepatu boots wanita ulzzang tinggi dengan resleting samping, bahan kulit premium, gaya Korea, muda dan mudah dipadukan</p>
+                                        <span class="product__info--price">Rp94.000 - Rp111.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Jakarta</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/boot9061.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">Diskon</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sepatu boots wanita model 9061, hak tinggi 7cm, bahan kulit mengkilap premium, tali dan resleting belakang, gaya ulzzang Korea 2021</p>
+                                        <span class="product__info--price">Rp139.000 - Rp169.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Ciamis</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/banhmi.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Yêu thích</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sandal roti wanita tali silang motif beruang lucu - Sandal wanita bahan plastik untuk hujan, pantai, rumah, sandal yz fashion musim panas 2021</p>
+                                        <span class="product__info--price">Rp39.000 - Rp50.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Jakarta</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/sandal.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Yêu thích</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sandal wanita 3 tali horizontal bunga daisy fashion - Sandal wanita tali belakang untuk sekolah, jalan-jalan, pantai, sandal ulzzang hot musim panas 2021, bagus harga murah</p>
+                                        <span class="product__info--price">Rp119.000 - Rp129.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Bandung</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/xvessel.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Yêu thích</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sepatu slip-on wanita Xvessel, tersedia 2 warna hitam putih, bahan kain robek, mudah dipakai, gaya ulzzang Korea, mudah dipadukan</p>
+                                        <span class="product__info--price">Rp134.000 - Rp145.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Surabaya</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/giaynam.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sepatu olahraga pria sol karet modis, nyaman dipakai beraktivitas GOW68</p>
+                                        <span class="product__info--price">Rp199.000 - Rp219.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Sidoarjo</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/jordan.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">SEPATU OLAHRAGA JD4 WARNA CREAM, sepatu jordan bagus, jordan model olahraga</p>
+                                        <span class="product__info--price">Rp80.000 - Rp392.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Semarang</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/tat.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Kaos Kaki Olahraga Motif Nasa Fashion</p>
+                                        <span class="product__info--price">Rp14.800</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Purwakarta</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/tat.jfif);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Kaos Kaki Olahraga Motif Nasa Fashion</p>
+                                        <span class="product__info--price">Rp14.800</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Yogyakarta</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="grid__column-2-2 m-grid__column-2-4 s-grid__column-3 ss-grid__column-6 product-item">
+                                <div class="product-item__box">
+                                    
+                                    <div class="product__img" style="background-image: url(assets/toong.jpg);">
+                                        <img src="assets/overlay.png" alt="">
+                                        <div class="product__img-favourite-label">
+                                            <p>Favorit</p>
+                                        </div>
+                                        <div class="product__img-discount">
+                                            <p class="product__img-discount-percent">55%</p>
+                                            <p class="product__img-discount-reduce">DISKON</p>
+                                        </div>
+                                    </div>
+                                    <div class="product__info">
+                                        <p class="product__info--name">Sandal Sarang Lebah Emas - Sandal sarang lebah emas X100 serangan</p>
+                                        <span class="product__info--price">Rp32.000 - Rp38.000</span>
+                                        <div class="product__quality">
+                                            <i class="far fa-heart product__quality--like"></i>
+                                            <div class="product__quality--fivestar">
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                                <i class="fas fa-star product__quality--fivestar-icon"></i>
+                                            </div>
+                                            <span class="product__quality--sold">Terjual 640</span>
+                                        </div>
+                                        <span class="product__info--place">Surabaya</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Page Controller -->
+                        <div class="grid__row page-controller">
+                            <div class="page-controller--pre page-controller--button">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="page-controller--number page-controller--current page-controller--button">1</div>
+                            <div class="page-controller--number page-controller--button">2</div>
+                            <div class="page-controller--number page-controller--button">3</div>
+                            <div class="page-controller--number page-controller--button">4</div>
+                            <div class="page-controller--dot page-controller--button">...</div>
+                            <div class="page-controller--number page-controller--button">9</div>
+                            <div class="page-controller--next page-controller--button">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="grid">
+                <div class="footer__app--space"></div>
+                <div class="grid__row footer__app">
+                    <div class="grid__column-3 ss-grid__column-6">
+                        <div class="footer__app--title">LAYANAN PELANGGAN</div>
+                        <ul class="footer__app--list">
+                            <li><a href="" class="footer__app--item">Pusat Bantuan</a></li>
+                            <li><a href="" class="footer__app--item">Shopee Blog</a></li>
+                            <li><a href="" class="footer__app--item">Shopee Mall</a></li>
+                            <li><a href="" class="footer__app--item">Panduan Belanja</a></li>
+                            <li><a href="" class="footer__app--item">Pembayaran</a></li>
+                            <li><a href="" class="footer__app--item">Shopee Koin</a></li>
+                            <li><a href="" class="footer__app--item">Pengiriman</a></li>
+                            <li><a href="" class="footer__app--item">Pengembalian & Dana</a></li>
+                            <li><a href="" class="footer__app--item">Layanan Pelanggan</a></li>
+                            <li><a href="" class="footer__app--item">Kebijakan Garansi</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 ss-grid__column-6">
+                        <div class="footer__app--title">Tentang Shopee</div>
+                        <ul class="footer__app--list">
+                            <li><a href="" class="footer__app--item">Tentang Shopee Indonesia</a></li>
+                            <li><a href="" class="footer__app--item">Rekrutmen</a></li>
+                            <li><a href="" class="footer__app--item">Ketentuan Shopee</a></li>
+                            <li><a href="" class="footer__app--item">Kebijakan Privasi</a></li>
+                            <li><a href="" class="footer__app--item">Asli</a></li>
+                            <li><a href="" class="footer__app--item">Saluran Penjual</a></li>
+                            <li><a href="" class="footer__app--item">Flash Sales</a></li>
+                            <li><a href="" class="footer__app--item">Program Afiliasi Shopee</a></li>
+                            <li><a href="" class="footer__app--item">Kontak Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 ss-grid__column-6">
+                        <div class="footer__app--title">IKUTI KAMI DI</div>
+                        <ul class="footer__app--list">
+                            <li>
+                                <i class="fab fa-facebook-square footer__app--icon"></i>
+                                <a href="" class="footer__app--item">Facebook</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram-square footer__app--icon"></i>
+                                <a href="" class="footer__app--item">Instagram</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin footer__app--icon"></i>
+                                <a href="" class="footer__app--item">LinkedIn</a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-3 ss-grid__column-6">
+                        <div class="footer__app--title">UNDUH APLIKASI SHOPEE</div>
+                        <div class="footer__app--download">
+                            <img src="assets/QRcodeShopee.png" alt="Qr-Download" class="footer__app--qrcode">
+                            <div class="footer__app--link">
+                                <a href="#" style="background-image: url(assets/ios.png); background-repeat: no-repeat; background-size: contain;" alt="IOS" class="footer__app--link-icon"></a>
+                                <a href="#" style="background-image: url(assets/android.png); background-repeat: no-repeat; background-size: contain;" alt="Android" class="footer__app--link-icon"></a>
+                                <a href="#" style="background-image: url(assets/appgallery.png); background-repeat: no-repeat; background-size: contain;" alt="Appgallery" class="footer__app--link-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__grow">
+                    <div class="footer__national">
+                        <div class="copyright grid__column-4 s-grid__full-width ss-grid__full-width" style="justify-content: center;">© 2020 Shopee. Hak Cipta Dilindungi </div>
+                        <ul class="national-area--list grid__column-8 s-grid__full-width ss-grid__full-width">
+                            <div>Negara:</div>
+                            <li class="national-area--item"><a href="#">Singapore</a></li>
+                            <li class="national-area--item"><a href="#">Indonesia</a></li>
+                            <li class="national-area--item"><a href="#">Thailand</a></li>
+                            <li class="national-area--item"><a href="#">Malaysia</a></li>
+                            <li class="national-area--item"><a href="#">Vietnam</a></li>
+                            <li class="national-area--item"><a href="#">Philippines</a></li>
+                            <li class="national-area--item"><a href="#">Brazil</a></li>
+                            <li class="national-area--item"><a href="#">México</a></li>
+                            <li class="national-area--item"><a href="#">Colombia</a></li>
+                            <li class="national-area--item"><a href="#">Chile</a></li>
+                            <li class="national-area--item"><a href="#">Poland</a></li>
+                            <li class="national-area--item"><a href="#">Spain</a></li>
+                            <li class="national-area--item"><a href="#">France</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__full-width" style="background-color: #f5f5f5;">
+                <div class="grid">
+                    <div class="grid__row company">
+                        <div class="company__policy">
+                            <span class="company__policy--item">KEBIJAKAN PRIVASI</span>
+                            <span class="company__policy--item">ATURAN OPERASI</span>
+                            <span class="company__policy--item">KEBIJAKAN PENGIRIMAN</span>
+                            <span class="company__policy--item">KEBIJAKAN PENGEMBALIAN DAN PENGEMBALIAN UANG</span>
+                        </div>
+                        <p class="company-registed">© Shopee 2020. Hak Cipta Dilindungi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
