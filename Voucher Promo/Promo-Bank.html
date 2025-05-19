@@ -1,0 +1,665 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Shopee Promo Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: "Open Sans", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-700">
+  <!-- Top Bar -->
+  <div
+    class="bg-[#FF5722] text-white text-xs sm:text-sm flex justify-between items-center px-3 sm:px-6 py-1 sm:py-2"
+  >
+    <div class="flex items-center space-x-4 sm:space-x-6 text-[10px] sm:text-xs">
+      <span>Seller Centre</span>
+      <span>Download</span>
+      <span>Ikuti kami di</span>
+      <a aria-label="Facebook" class="hover:underline" href="#">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a aria-label="Twitter" class="hover:underline" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a aria-label="Instagram" class="hover:underline" href="#">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <div class="flex items-center space-x-4 sm:space-x-6 text-[10px] sm:text-xs">
+      <button class="flex items-center space-x-1 hover:underline">
+        <i class="far fa-bell"></i>
+        <span>Notifikasi</span>
+      </button>
+      <button class="flex items-center space-x-1 hover:underline">
+        <i class="far fa-user"></i>
+        <span>Beriten</span>
+      </button>
+      <button class="flex items-center space-x-1 hover:underline">
+        <i class="fas fa-globe"></i>
+        <span>Bahasa Indonesia</span>
+      </button>
+      <button class="flex items-center space-x-1 hover:underline">
+        <i class="fas fa-user-circle"></i>
+        <span>123oserya.id</span>
+      </button>
+    </div>
+  </div>
+  <!-- Header with Shopee logo, search, and cart icon side by side -->
+  <header
+    class="bg-[#FF5722] px-3 sm:px-6 py-3 flex flex-col sm:flex-row items-center sm:items-stretch justify-between gap-3 sm:gap-0 max-w-[1400px] mx-auto"
+  >
+    <div class="flex items-center space-x-4 flex-grow min-w-0">
+      <img
+        alt="Shopee logo white on orange background"
+        class="w-[120px] h-[40px] object-contain flex-shrink-0"
+        height="40"
+        src="https://storage.googleapis.com/a1aa/image/ba1f7128-49f2-463b-fe24-d5822765c22d.jpg"
+        width="120"
+      />
+      <form
+        aria-label="Search products, brands and stores"
+        class="flex flex-grow min-w-0"
+        role="search"
+      >
+        <input
+          aria-label="Search input"
+          class="flex-grow rounded-l-md px-3 py-2 text-sm sm:text-base focus:outline-none min-w-0"
+          placeholder="Cari produk, merek dan toko"
+          type="search"
+        />
+        <button
+          aria-label="Search button"
+          class="bg-white text-[#FF5722] px-4 py-2 rounded-r-md hover:bg-gray-100"
+          type="submit"
+        >
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <button
+      aria-label="Shopping cart"
+      class="text-white hover:text-gray-200 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 rounded-md"
+      type="button"
+    >
+      <i class="fas fa-shopping-cart text-xl sm:text-2xl"></i>
+    </button>
+  </header>
+  <!-- Navigation below search -->
+  <nav
+    class="bg-white border-b border-gray-200 text-xs font-semibold text-[#FF5722] max-w-[1200px] mx-auto px-3 sm:px-6 py-2 flex justify-center space-x-6 sm:space-x-12"
+  >
+    <button class="hover:underline pb-1">Semua</button>
+    <button class="hover:underline">Hot Promo</button>
+    <button class="hover:underline">ShopeePay</button>
+    <button class="hover:underline">ShopeeFood</button>
+    <button class="border-b-2 border-[#FF5722] pb-1">Promo Bank</button>
+    <button class="hover:underline">Pulsa, Tagihan &amp; Tiket</button>
+  </nav>
+  <!-- Promo Cards Grid -->
+  <main class="max-w-[1200px] mx-auto px-3 sm:px-6 py-6">
+    <section
+      aria-label="Promo cards"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    >
+      <!-- Card 1 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="BrandDay Promo: Dapatkan Diskon s/d 60% & Kesempatan Menangkan Oven"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/62a807f7-dc57-4a7b-6171-89e6d6f40a85.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Brand Day PBI : Dapatkan Diskon s/d 60% & Kesempatan Menangkan Oven!
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 21-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Brand Day Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Brand Day Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Pakai Pesanan Terjadwal untuk dapatkan Diskon s/d 90% sekarang"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/a604d2da-e472-463f-92b2-42327d49c289.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Pakai Pesanan Terjadwal untuk dapatkan Diskon s/d 90% sekarang
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 21-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Pesanan Terjadwal Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Pesanan Terjadwal Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 3 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Bayar Tagihan Cicilan & Pakai Spaylater | PLN & Lainnya Diskon s/d 500RB"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/c8027327-57b4-4157-e1e1-3aadd638374e.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Bayar Tagihan Cicilan &amp; Pakai Spaylater | PLN &amp; Lainnya Diskon s/d 500RB
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 16-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Bayar Tagihan Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Bayar Tagihan Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 4 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Cashback BIBI Bayar di Aplikasi Klik Indomaret Pakai ShopeePay"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/04ebe006-6431-45f4-1fa6-bf653278aa42.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Cashback BIBI Bayar di Aplikasi Klik Indomaret Pakai ShopeePay
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 14-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Cashback BIBI Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Cashback BIBI Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 5 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Nonton Hemat Tiap Jumat, Sabtu, Minggu di Aplikasi ShopeePay"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/83a0cee3-11cc-4c88-d372-547de7dfe1f3.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Nonton Hemat Tiap Jumat, Sabtu, Minggu di Aplikasi ShopeePay
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 10-06-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Nonton Hemat Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Nonton Hemat Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 6 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Festival Penulis Lokal: Nikmati Diskon s/d 50% + Ekstra Voucher Diskon 50% hanya di 15-31 Mei 2025!"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/93f95033-e23b-4071-c7d1-9e2e8c65d3eb.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Festival Penulis Lokal: Nikmati Diskon s/d 50% + Ekstra Voucher Diskon 50%
+          hanya di 15-31 Mei 2025!
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 21-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Festival Penulis Lokal Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Festival Penulis Lokal Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 7 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Nikmati promo dari Restro Diskon Temu s/d 60% & Gratis Ongkir XTRA di sekitar!"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/22195ea5-b14a-456d-31f6-09e1819ec894.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Nikmati promo dari Restro Diskon Temu s/d 60% &amp; Gratis Ongkir XTRA di
+          sekitar!
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 24-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Diskon Temu Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Diskon Temu Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 8 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Kurban Murah, Berkah Melimpah Mulai Dari 1,35 JT hanya di Shopee Barokah"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/c28eee03-6886-4f75-458e-e7823fdf0dc0.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Kurban Murah, Berkah Melimpah Mulai Dari 1,35 JT hanya di Shopee Barokah
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 07-06-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Kurban Murah Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Kurban Murah Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+      <!-- Card 9 -->
+      <article class="border border-gray-200 rounded-md p-3 flex flex-col">
+        <img
+          alt="Makan Puas Mulai 20RB, Termasuk Ongkir!"
+          class="rounded-md mb-2 object-cover w-full h-[120px]"
+          height="120"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/2343f40f-0aab-4ae5-746a-ab3f8c653922.jpg"
+          width="320"
+        />
+        <h3 class="text-xs sm:text-sm font-semibold mb-1 leading-tight">
+          Makan Puas Mulai 20RB, Termasuk Ongkir!
+        </h3>
+        <time class="text-[10px] text-gray-400 mb-2">Berakhir Hingga 25-05-2025</time>
+        <div class="flex justify-between items-center text-gray-400 text-xs mb-3">
+          <button aria-label="Share Makan Puas Promo" class="hover:text-[#FF5722]">
+            <i class="fas fa-share-alt"></i>
+          </button>
+          <button
+            aria-label="Lihat Rincian Makan Puas Promo"
+            class="bg-[#FF5722] text-white text-xs px-3 py-1 rounded hover:bg-[#e64a19]"
+          >
+            LIHAT RINCIAN
+          </button>
+        </div>
+      </article>
+    </section>
+    <!-- Pagination -->
+    <nav
+      aria-label="Pagination"
+      class="flex justify-center items-center space-x-2 mt-6 text-xs sm:text-sm font-semibold"
+    >
+      <button
+        aria-current="page"
+        aria-label="Page 1"
+        class="bg-[#FF5722] text-white rounded px-3 py-1"
+      >
+        1
+      </button>
+      <button
+        aria-label="Page 2"
+        class="border border-gray-300 rounded px-3 py-1 hover:bg-gray-100"
+      >
+        2
+      </button>
+      <button
+        aria-label="Page 3"
+        class="border border-gray-300 rounded px-3 py-1 hover:bg-gray-100"
+      >
+        3
+      </button>
+      <button
+        aria-label="Page 4"
+        class="border border-gray-300 rounded px-3 py-1 hover:bg-gray-100"
+      >
+        4
+      </button>
+      <button
+        aria-label="Page 5"
+        class="border border-gray-300 rounded px-3 py-1 hover:bg-gray-100"
+      >
+        5
+      </button>
+    </nav>
+  </main>
+  <!-- Separator line -->
+  <div class="border-t border-[#FF5722] max-w-[1200px] mx-auto mt-6"></div>
+  <!-- Brands & Categories text -->
+  <section
+    class="max-w-[1200px] mx-auto px-3 sm:px-6 py-6 text-xs text-gray-400 select-none"
+  >
+    Brands - 46 Categories
+  </section>
+  <!-- Content text area -->
+  <section
+    class="max-w-[1200px] mx-auto px-3 sm:px-6 pb-12 text-[10px] sm:text-xs text-gray-500 leading-relaxed"
+  >
+    <p class="mb-3">Update Kode Promo &amp; Diskon Meriah Bulan Mei 2025 Shopee Indonesia</p>
+    <p class="mb-3">
+      Shopee menjadi tujuan belanja favorit di pasar Indonesia! Shopee menyediakan berbagai keistimewaan dengan kualitas terbaik dan harga termurah. Anda kebutuhan apalagi belanja online di sini, mudah, fasilitas memadai, handphone &amp; smartphone, diskon 0% dan juga hingga waktu terbatas di Shopee dengan berbagai promo belanja menarik.
+    </p>
+    <p class="mb-3">
+      Jaringan luas di lokasi dan real-time untuk pengguna lokal, berbagai kemudahan Shopee menciptakan berbagai kemudahan pembelian dengan berbagai bank di Indonesia dan diskon menarik yang dapat digunakan untuk berbelanja. Dari pusat tempat hingga berbagai tempat, fitur yang lengkap.
+    </p>
+    <p class="mb-3 font-semibold">Promo Diskon Besar-Besaran di Shopee</p>
+    <p class="mb-3">
+      Beragam promo cashback menarik mulai 0% hingga 100% dilakukan khusus untuk mempermudah pengeluaran kamu saat berbelanja. Tidak hanya itu, semua cashback akan langsung masuk secara otomatis ke akun Shopee mu yang dapat dipakai untuk pembelian berikutnya. Jadi, jangan sampai ketinggalan untuk promo menarik dan berbagai diskon, seperti
+      <a class="text-[#FF5722] hover:underline" href="#">voucher</a>, 
+      <a class="text-[#FF5722] hover:underline" href="#">diskon</a>, 
+      <a class="text-[#FF5722] hover:underline" href="#">promo</a> dan lain sebagainya untuk berbelanja lebih hemat di berbagai toko online di marketplace dan e-commerce.
+    </p>
+    <p class="mb-3 font-semibold">Kelebihan Belanja Online Hemat di Shopee</p>
+    <p class="mb-3">
+      Berbagai pilihan produk menarik di Indonesia. Shopee dapat melakukan berbagai layanan dengan fitur lengkap dan menawarkan produk berkualitas, seperti cashback, potensi diskon, promo, voucher, gratis ongkir, dan layanan “troppo” kualitas dan berbagai aksesorisnya. Produk-produk tersebut tentunya dapat anda beli seperti dengan jaminan produk berkualitas, harga yang kompetitif dan transparansi serta 100% kualitas yang terbaik.
+    </p>
+    <p class="mb-3">
+      Apakah kamu sedang menginginkan produk terbaik yang mudah digunakan (authentik)? Segera belanja di Shopee.id! Shopee Mall adalah tempat untuk kamu yang menginginkan berbagai barang original dan bergaransi resmi. Selain itu, layanan gratis ongkir di berbagai Marketplace, layanan pengiriman cepat, ongkos kirim murah dan layanan pengembalian barang yang mudah dan tanpa ribet.
+    </p>
+    <p class="mb-3">
+      Tidak hanya menyediakan pengalaman belanja online hemat, Shopee juga menawarkan kemudahan pembayaran dengan
+      <a class="text-[#FF5722] hover:underline" href="#">ShopeePay</a> yang cepat dan aman sehingga pembayaran belanja online kamu akan semakin mudah dan nyaman. Shopee menyediakan berbagai metode pembayaran yang mudah dan aman untuk memberikan pengalaman pembayaran yang terbaik.
+    </p>
+    <p class="mb-3 font-semibold">Cari Harga Murah Terbaru Hari Ini hanya di Shopee Indonesia</p>
+    <p class="mb-3">
+      Belanja online tentunya ingin yang memberikan kemudahan pembayaran belanja yang nyaman, cepat, dan murah. Shopee yang bekerja sama dengan berbagai toko seller di seluruh Indonesia menyediakan semua kebutuhan dengan harga murah dan diskon promo menarik. Jangan lupa untuk selalu mengupdate setiap update 11.11 di
+      <a class="text-[#FF5722] hover:underline" href="#">Shopee Indonesia</a> karena ada campaign dan berbagai diskon spesial yang menarik para pelanggan setia Shopee.
+    </p>
+    <p>
+      Berbagai berbagai kebutuhan dengan mudah, cepat, dan nyaman kini semakin dipermudah di
+      <a class="text-[#FF5722] hover:underline" href="#">shopee.co.id</a>. Belanja apapun di ya Shopee Indonesia!
+    </p>
+  </section>
+  <!-- Footer -->
+  <footer
+    class="max-w-[1200px] mx-auto px-3 sm:px-6 py-8 text-gray-500 text-[10px] sm:text-xs select-none"
+  >
+    <div class="grid grid-cols-2 sm:grid-cols-6 gap-6 border-b border-gray-200 pb-6">
+      <!-- Layanan Pelanggan -->
+      <div>
+        <h4 class="font-semibold text-gray-700 mb-2">Layanan Pelanggan</h4>
+        <ul class="space-y-1">
+          <li><a class="hover:underline" href="#">Bantuan</a></li>
+          <li><a class="hover:underline" href="#">Metode Pembayaran</a></li>
+          <li><a class="hover:underline" href="#">ShopeePay</a></li>
+          <li><a class="hover:underline" href="#">Koin Shopee</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pesanan Pesodi</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pengiriman Paket</a></li>
+          <li><a class="hover:underline" href="#">Gratis Ongkir</a></li>
+          <li><a class="hover:underline" href="#">Pengembalian Barang &amp; Dana</a></li>
+          <li><a class="hover:underline" href="#">Garansi Shopee</a></li>
+          <li><a class="hover:underline" href="#">XTRA Aman</a></li>
+          <li><a class="hover:underline" href="#">Pusat Bantuan</a></li>
+        </ul>
+      </div>
+      <!-- Jejakj Shopee -->
+      <div>
+        <h4 class="font-semibold text-gray-700 mb-2">Jejakj Shopee</h4>
+        <ul class="space-y-1">
+          <li><a class="hover:underline" href="#">Tentang Kami</a></li>
+          <li><a class="hover:underline" href="#">Karir</a></li>
+          <li><a class="hover:underline" href="#">Mitigasi Shopee</a></li>
+          <li><a class="hover:underline" href="#">Kebijakan Privasi</a></li>
+          <li><a class="hover:underline" href="#">Blog</a></li>
+          <li><a class="hover:underline" href="#">Shopee Mall</a></li>
+          <li><a class="hover:underline" href="#">Seller Centre</a></li>
+          <li><a class="hover:underline" href="#">Flash Sale</a></li>
+          <li><a class="hover:underline" href="#">Kontak Media</a></li>
+          <li><a class="hover:underline" href="#">Shopee Affiliate</a></li>
+        </ul>
+      </div>
+      <!-- Pembayaran -->
+      <div class="col-span-2 sm:col-span-1">
+        <h4 class="font-semibold text-gray-700 mb-2">Pembayaran</h4>
+        <div class="grid grid-cols-4 gap-2">
+          <img
+            alt="BCA bank logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/abab9ed0-945d-4af8-53cf-22ab0c882855.jpg"
+            width="48"
+          />
+          <img
+            alt="BNI bank logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/3de9908c-286d-412a-2850-1b8f91ff3ef3.jpg"
+            width="48"
+          />
+          <img
+            alt="BRI bank logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/c19b2cc4-63a0-4be7-97c1-64bb58e66fff.jpg"
+            width="48"
+          />
+          <img
+            alt="Mandiri bank logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/167edbb8-ef7a-429a-6bab-d679dd6cb41a.jpg"
+            width="48"
+          />
+          <img
+            alt="Alfamart logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/c5c643c3-5272-4980-1863-dafd046b5029.jpg"
+            width="48"
+          />
+          <img
+            alt="Indomaret logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/31496d10-878c-48d1-9444-ae7f73c67f4c.jpg"
+            width="48"
+          />
+          <img
+            alt="Visa logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/24d33b77-6e71-450c-5c81-b34079ea0c06.jpg"
+            width="48"
+          />
+          <img
+            alt="Mastercard logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/fe35740e-bbf6-4ad2-5825-11651f296ea7.jpg"
+            width="48"
+          />
+          <img
+            alt="JCB logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/2915cefa-7133-4ec1-69d5-42be82695bdb.jpg"
+            width="48"
+          />
+          <img
+            alt="Gopay logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/89ff99b9-b90d-4eac-3bd6-5a82c498e1ee.jpg"
+            width="48"
+          />
+          <img
+            alt="Dana logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/ae5b1da7-c3e5-4dfb-c538-922883786969.jpg"
+            width="48"
+          />
+          <img
+            alt="ShopeePay logo"
+            class="object-contain"
+            height="24"
+            src="https://storage.googleapis.com/a1aa/image/8d878bba-3697-4974-8714-4dc251b87230.jpg"
+            width="48"
+          />
+        </div>
+      </div>
+      <!-- Ikuti Kami -->
+      <div>
+        <h4 class="font-semibold text-gray-700 mb-2">Ikuti Kami</h4>
+        <ul class="space-y-1">
+          <li>
+            <a class="hover:underline flex items-center space-x-2" href="#">
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline flex items-center space-x-2" href="#">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline flex items-center space-x-2" href="#">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline flex items-center space-x-2" href="#">
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a class="hover:underline flex items-center space-x-2" href="#">
+              <i class="fas fa-university"></i>
+              <span>Kampus Shopee</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Download Aplikasi Shopee -->
+      <div class="flex flex-col items-center">
+        <h4 class="font-semibold text-gray-700 mb-2">Download Aplikasi Shopee</h4>
+        <img
+          alt="QR code to download Shopee application"
+          class="mb-2"
+          height="80"
+          loading="lazy"
+          src="https://storage.googleapis.com/a1aa/image/27a8cde7-2cc2-4b4b-ce51-f6bde05902d3.jpg"
+          width="80"
+        />
+        <div class="flex space-x-2">
+          <img
+            alt="Google Play Store badge"
+            class="object-contain"
+            height="24"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/f887503e-e2c9-48ab-5cdb-691039c62911.jpg"
+            width="80"
+          />
+          <img
+            alt="Apple App Store badge"
+            class="object-contain"
+            height="24"
+            loading="lazy"
+            src="https://storage.googleapis.com/a1aa/image/1204e6bd-3495-494d-4d4f-d360588d19f9.jpg"
+            width="80"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Security and copyright -->
+    <div
+      class="flex flex-col sm:flex-row justify-between items-center mt-6 text-[9px] sm:text-[10px] text-gray-400 space-y-2 sm:space-y-0"
+    >
+      <div>© Shopee 2025. Hak Cipta Dilindungi</div>
+      <div class="flex flex-wrap justify-center gap-1 sm:gap-2">
+        <span>Negara:</span>
+        <a class="hover:underline" href="#">Singapura</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Indonesia</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Thailand</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Malaysia</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Vietnam</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Filipina</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Brazil</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">México</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Colombia</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Chile</a>
+        <span>|</span>
+        <a class="hover:underline" href="#">Taiwan</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
