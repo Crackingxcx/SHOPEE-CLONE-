@@ -1,0 +1,436 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee PLN
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Montserrat", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f7f7f7]">
+  <!-- Header -->
+  <header class="bg-gradient-to-b from-[#FF5722] to-[#FF7043] text-white">
+   <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+    <div class="flex items-center space-x-2">
+     <img alt="Shopee logo, white S letter on orange background" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/f563c6f2-5ac0-4d16-389f-83295eec87ed.jpg" width="24"/>
+     <span class="font-semibold text-lg">
+      Shopee
+     </span>
+     <span class="ml-2 text-sm font-normal">
+      | Pulsa, Tagihan &amp; Hiburan
+     </span>
+    </div>
+    <div class="text-xs font-bold cursor-pointer select-none">
+     Keluar
+    </div>
+   </div>
+   </div>
+  </header>
+  <!-- Navigation Tabs -->
+  <nav class="bg-white border-b border-gray-200">
+   <div class="max-w-7xl mx-auto flex justify-center sm:justify-center space-x-8 px-4">
+    <button onclick="showSection('pulsa')" id="tab-pulsa" class="flex flex-col items-center justify-center py-3 text-xs text-gray-700 hover:text-gray-900" type="button">
+     <i class="fas fa-mobile-alt text-lg mb-1"></i>
+     Pulsa
+    </button>
+    <button onclick="showSection('paket')" id="tab-paket" class="flex flex-col items-center justify-center py-3 text-xs text-gray-700 hover:text-gray-900" type="button">
+     <i class="fas fa-wifi text-lg mb-1"></i>
+     Paket Data
+    </button>
+    <button onclick="showSection('game')" id="tab-game" class="flex flex-col items-center justify-center py-3 text-xs text-gray-700 hover:text-gray-900" type="button">
+     <i class="fas fa-gamepad text-lg mb-1"></i>
+     Voucher Game
+    </button>
+    <button onclick="showSection('pln')" id="tab-pln" aria-current="page" class="flex flex-col items-center justify-center py-3 text-xs text-[#FF5722] font-semibold border-b-2 border-[#FF5722]" type="button">
+     <i class="fas fa-lightbulb text-[#FF5722] text-lg mb-1"></i>
+     PLN
+    </button>
+    <button onclick="showSection('lainnya')" id="tab-lainnya" class="flex flex-col items-center justify-center py-3 text-xs text-gray-700 hover:text-gray-900" type="button">
+     <i class="fas fa-ellipsis-h text-lg mb-1"></i>
+     Lainnya
+    </button>
+   </div>
+  </nav>
+  <!-- Tab Contents -->
+  <div id="section-pulsa" class="hidden max-w-7xl mx-auto px-4 py-6">
+    <section class="bg-white p-6 rounded-sm shadow-sm max-w-4xl mx-auto text-center">
+      <h2 class="font-bold text-lg mb-2">Pulsa</h2>
+      <p class="text-gray-500 text-sm">Pilih mau beli berapa di bawa ini</p>
+    </section>
+  </div>
+  <div id="section-paket" class="hidden max-w-7xl mx-auto px-4 py-6">
+    <section class="bg-white p-6 rounded-sm shadow-sm max-w-4xl mx-auto text-center">
+      <h2 class="font-bold text-lg mb-2">Paket Data</h2>
+      <p class="text-gray-500 text-sm"><main class="max-w-7xl mx-auto bg-[#F9F9F9] px-4 py-6 min-h-[200px]">
+   <form class="max-w-3xl bg-white p-6 rounded-sm shadow-sm" id="purchaseForm">
+    <h2 class="font-semibold text-sm mb-4">
+     Paket Data
+    </h2>
+    <label class="block text-xs text-gray-500 mb-1" for="phone">
+     Nomor Telepon
+    </label>
+    <input aria-label="Nomor Telepon input" class="w-full border border-gray-200 rounded-sm px-3 py-2 text-xs text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#FF5722]" id="phone" placeholder="Silakan Masukkan No. Handphone-mu" type="text"/>
+     <button class="bg-[#FF5722] hover:bg-[#e64a19] text-white text-xs font-semibold px-6 py-2 rounded-sm transition-colors disabled:bg-[#FFCCCB] disabled:cursor-not-allowed" id="buyButton" type="submit" disabled="">
+      Beli Sekarang
+     </button>
+    </div>
+   </form>
+  </main>
+  <script>
+   const phoneInput = document.getElementById('phone');
+    const buyButton = document.getElementById('buyButton');
+
+    // Enable button only if input is not empty and looks like a phone number (basic check)
+    phoneInput.addEventListener('input', () => {
+      const value = phoneInput.value.trim();
+      // Basic phone number validation: at least 6 digits (adjust as needed)
+      const isValidPhone = /^\d{6,}$/.test(value);
+      buyButton.disabled = !isValidPhone;
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!buyButton.disabled) {
+        alert(`Pembelian paket data untuk nomor ${phoneInput.value.trim()} telah disetujui.`);
+        phoneInput.value = '';
+        buyButton.disabled = true;
+      }
+    });
+  </script></p>
+    </section>
+  </div>
+  <div id="section-game" class="hidden max-w-7xl mx-auto px-4 py-6">
+    <section class="bg-white p-6 rounded-sm shadow-sm max-w-4xl mx-auto text-center">
+      <h2 class="font-bold text-lg mb-2">Voucher Game</h2>
+      <p class="text-gray-500 text-sm"> <main class="max-w-7xl mx-auto px-4 py-6 bg-white mt-6 rounded-sm shadow-sm">
+   <h2 class="font-semibold text-sm mb-4">
+    Game
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4" id="gameGrid">
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Free Fire game logo black text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/df529c06-1271-4b5f-d313-cf8f83e03929.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Free Fire
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Garena game logo red stylized G on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/62a4dbd4-b70d-48a2-2d20-63595a237c26.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Garena
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Call of Duty Mobile logo black text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/4a4f029b-2401-4745-a937-4a177cafedd6.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Call of Duty Mobile
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="AOV Arena of Valor logo brown and gold on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/2942a911-96fe-45c5-29e4-49cbaf6a767c.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      AOV
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="HAGO game logo yellow icon on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/50ac78bb-6bc4-4aa2-77ae-7ec52f6c0bc8.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      HAGO
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Point Blank game character image on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/2734ba84-1774-40fe-5707-10bb6236b6b0.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Point Blank
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Game of Sultans logo gold text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/e51f77d7-7e86-4a15-5df8-5ed2e972b34c.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Game of Sultans
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Speed Drifters game logo orange and blue on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/ef51e905-ab79-4743-f12c-b1d8c3354003.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Speed Drifters
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Google Play logo multicolor triangle on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/16f82d86-7ccd-4732-8e51-1bc721130e5d.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Google Play
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="UniPin Voucher logo orange text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/7330149c-13d4-4526-c66f-4b959a9b031a.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      UniPin Voucher
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Steam Wallet IDR logo blue and white circle on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/186ea493-565b-42e9-fe35-8971b7e08b07.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Steam Wallet IDR
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Razer PIN logo gold circle with Z on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/759d92e7-2196-446e-912c-ccea95a3c819.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Razer PIN
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Megaxus logo red circle with M on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/c75b61ee-15ed-43b8-9c6a-969bc8cc930a.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Megaxus
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="PlayStation Store Gift Cards logo blue and white on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/29db1d04-0dcd-49ff-4b47-50e8905220de.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      PlayStation™Store Gift Cards
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="PUBG Mobile logo yellow text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/9b765edb-aed2-4d1c-45a8-52b60e80c3df.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      PUBG Mobile
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Game On logo colorful text on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/767e4066-effc-495d-2bab-cefbf9a09b1e.jpg" width="80"/>
+     <span class="text-xs text-center text-gray-700">
+      Game On
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="Genshin Impact Powered by Google Play game image on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/73a7b5ee-a40e-4274-5244-477e303dddae.jpg" width="80"/>
+     <span class="text-[9px] text-center text-gray-700">
+      Genshin Impact Powered by Google Play
+     </span>
+    </div>
+    <div class="border border-gray-200 bg-white flex flex-col items-center justify-center p-4 cursor-pointer game-item" tabindex="0">
+     <img alt="State of Survival Powered by Google Play game image on white background" class="mb-2 max-h-10 object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/96d672c3-7987-463a-2c9a-5a373c08da3b.jpg" width="80"/>
+     <span class="text-[9px] text-center text-gray-700">
+      State of Survival Powered by Google Play
+     </span>
+    </div>
+   </div>
+  </main>
+  <script>
+   // Select all game items
+    const gameItems = document.querySelectorAll('.game-item');
+
+    gameItems.forEach(item => {
+      item.addEventListener('click', () => {
+        // Remove active class from all
+        gameItems.forEach(i => {
+          i.classList.remove('border-[#f44336]', 'text-[#f44336]');
+          i.querySelector('span').classList.remove('text-[#f44336]');
+          i.classList.add('border-gray-200');
+          i.querySelector('span').classList.add('text-gray-700');
+        });
+        // Add active class to clicked
+        item.classList.add('border-[#f44336]');
+        item.classList.remove('border-gray-200');
+        item.querySelector('span').classList.add('text-[#f44336]');
+        item.querySelector('span').classList.remove('text-gray-700');
+      });
+    });
+  </script></p>
+    </section>
+  </div>
+  <div id="section-pln" class="max-w-7xl mx-auto px-4 py-6">
+    <!-- PLN content tetap di sini, biarkan main PLN tetap tampil -->
+  </div>
+  <div id="section-lainnya" class="hidden max-w-7xl mx-auto px-4 py-6">
+    <section class="bg-white p-6 rounded-sm shadow-sm max-w-4xl mx-auto text-center">
+      <h2 class="font-bold text-lg mb-2">Lainnya</h2>
+      <p class="text-gray-500 text-sm">SELAMAT DATANG</p>
+    </section>
+  </div>
+  <script>
+    // Tab switching logic
+    function showSection(tab) {
+      const tabs = ['pulsa', 'paket', 'game', 'pln', 'lainnya'];
+      tabs.forEach(t => {
+        document.getElementById('section-' + t).classList.add('hidden');
+        document.getElementById('tab-' + t).classList.remove('text-[#FF5722]', 'font-semibold', 'border-b-2', 'border-[#FF5722]');
+        document.getElementById('tab-' + t).setAttribute('aria-current', 'false');
+      });
+      document.getElementById('section-' + tab).classList.remove('hidden');
+      document.getElementById('tab-' + tab).classList.add('text-[#FF5722]', 'font-semibold', 'border-b-2', 'border-[#FF5722]');
+      document.getElementById('tab-' + tab).setAttribute('aria-current', 'page');
+    }
+    // Default: PLN tab active
+    showSection('pln');
+  </script>
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-6">
+   <section class="bg-white p-6 rounded-sm shadow-sm max-w-4xl mx-auto">
+    <h2 class="font-bold text-sm mb-4">
+     Beli Token/Bayar Tagihan Listrik/beli Voucher game
+    </h2>
+    <!-- Radio buttons -->
+    <form id="plnForm">
+     <div class="flex items-center space-x-6 mb-4 text-xs text-gray-700 font-normal">
+      <label class="flex items-center space-x-2 cursor-pointer select-none">
+       <input checked="" class="w-4 h-4 text-[#FF5722] border-gray-300 focus:ring-[#FF5722]" name="paymentType" type="radio" value="token"/>
+       <span>
+        Token Listrik
+       </span>
+      </label>
+      <label class="flex items-center space-x-2 cursor-pointer select-none">
+       <input class="w-4 h-4 text-[#FF5722] border-gray-300 focus:ring-[#FF5722]" name="paymentType" type="radio" value="postpaid"/>
+       <span>
+        Voucher game
+       </span>
+      </label>
+      <label class="flex items-center space-x-2 cursor-pointer select-none">
+       <input class="w-4 h-4 text-[#FF5722] border-gray-300 focus:ring-[#FF5722]" name="paymentType" type="radio" value="postpaid"/>
+       <span>
+        pulsa
+       </span>
+     </div>
+     <!-- Input with PLN logo -->
+     <div class="relative mb-6">
+      <input inputmode="numeric" pattern="[0-9]*" class="w-full border border-gray-200 rounded-sm py-3 px-4 text-xs text-gray-400 placeholder-gray-300 focus:outline-none focus:ring-1 focus:ring-[#FF5722] focus:border-[#FF5722]" id="customerId" placeholder="No.Meter/ID Pelanggan" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')"/>
+      <img alt="PLN logo, yellow square with red and blue lightning bolt and letters PLN" class="absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/b23bd981-2f71-4538-22f6-90fd0bf80745.jpg" width="24"/>
+     </div>
+     <!-- Price grid -->
+     <div class="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-6">
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-20000">
+       <input class="hidden peer" id="price-20000" name="price" type="radio" value="20000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        20.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        3%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-50000">
+       <input class="hidden peer" id="price-50000" name="price" type="radio" value="50000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        50.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-100000">
+       <input class="hidden peer" id="price-100000" name="price" type="radio" value="100000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        100.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-200000">
+       <input class="hidden peer" id="price-200000" name="price" type="radio" value="200000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        200.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-500000">
+       <input class="hidden peer" id="price-500000" name="price" type="radio" value="500000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        500.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-1000000">
+       <input class="hidden peer" id="price-1000000" name="price" type="radio" value="1000000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        1.000.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-5000000">
+       <input class="hidden peer" id="price-5000000" name="price" type="radio" value="5000000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        5.000.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+      <label class="relative border border-gray-200 rounded-sm py-6 text-center cursor-pointer select-none peer-checked:border-[#FF5722] peer-checked:bg-[#FFF3E8] transition-colors duration-200" for="price-10000000">
+       <input class="hidden peer" id="price-10000000" name="price" type="radio" value="10000000"/>
+       <span class="text-sm font-normal text-gray-900 peer-checked:text-[#FF5722] transition-colors duration-200">
+        10.000.000
+       </span>
+       <div class="absolute top-2 right-2 bg-yellow-300 text-[9px] font-bold text-black px-1 rounded-sm leading-none">
+        1%
+        <br/>
+        OFF
+       </div>
+      </label>
+     </div>
+     <button aria-pressed="false" class="bg-[#FF5722] text-white text-sm font-semibold py-3 px-8 rounded-sm float-right transition-colors duration-200 hover:bg-[#e64a19] focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-[#FF5722]" id="submitBtn" type="submit">
+      Lanjut
+     </button>
+    </form>
+   </section>
+  </main>
+  <script>
+   // Change button text and style on click to simulate approval
+    const form = document.getElementById('plnForm');
+    const submitBtn = document.getElementById('submitBtn');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Check if a price is selected and customer ID is filled
+      const priceSelected = form.price.value;
+      const customerId = form.customerId.value.trim();
+
+      if (!customerId) {
+        alert('Mohon isi No.Meter/ID Pelanggan');
+        return;
+      }
+      if (!priceSelected) {
+        alert('Mohon pilih nominal harga');
+        return;
+      }
+
+      // Change button text and style to indicate approval
+      submitBtn.textContent = 'Pembelian Disetujui';
+      submitBtn.setAttribute('aria-pressed', 'true');
+      submitBtn.disabled = true;
+      submitBtn.classList.remove('hover:bg-[#e64a19]');
+      submitBtn.classList.add('bg-green-600', 'cursor-default');
+    });
+  </script>
+ </body>
+</html>
