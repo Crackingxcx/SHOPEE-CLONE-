@@ -1,0 +1,298 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee Product Page
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-[#f5f5f5] text-[#222222]">
+  <!-- Top bar -->
+  <div class="bg-[#ff5722] text-white text-xs px-4 py-1 flex justify-between items-center select-none">
+   <div class="flex space-x-2 items-center">
+    <span>
+     Seller Centre
+    </span>
+    <span>
+     |
+    </span>
+    <a class="underline" href="#">
+     Download
+    </a>
+    <span>
+     |
+    </span>
+    <span>
+     Ikuti kami di
+    </span>
+    <a aria-label="Facebook" class="ml-1 hover:text-gray-200" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a aria-label="Instagram" class="ml-1 hover:text-gray-200" href="#">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+    <a aria-label="Line" class="ml-1 hover:text-gray-200" href="#">
+     <i class="fab fa-line">
+     </i>
+    </a>
+   </div>
+   <div class="flex items-center space-x-4 text-xs">
+    <button class="flex items-center space-x-1 hover:underline">
+     <i class="far fa-bell">
+     </i>
+     <span>
+      Notifikasi
+     </span>
+    </button>
+    <button class="flex items-center space-x-1 hover:underline">
+     <i class="far fa-question-circle">
+     </i>
+     <span>
+      Bantuan
+     </span>
+    </button>
+    <button class="flex items-center space-x-1 hover:underline">
+     <i class="fas fa-globe">
+     </i>
+     <span>
+      Bahasa Indonesia
+     </span>
+     <i class="fas fa-chevron-down text-[8px]">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Header with logo and search -->
+  <header class="bg-gradient-to-r from-[#ff5722] to-[#ff7043] px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+   <div class="flex items-center space-x-3 flex-shrink-0">
+    <img alt="Shopee logo icon" class="w-8 h-8" height="32" src="https://storage.googleapis.com/a1aa/image/27860e64-6476-499c-6c99-af0ab97e362f.jpg" width="32"/>
+    <span class="text-white font-semibold text-lg select-none">
+     Shopee
+    </span>
+   </div>
+   <form aria-label="Search products, brands and stores" class="flex flex-grow max-w-xl w-full" role="search">
+    <input aria-label="Search input" class="flex-grow rounded-l-md border border-transparent px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-white" placeholder="Cari produk, merek dan toko" type="search"/>
+    <button aria-label="Search button" class="bg-white px-3 rounded-r-md text-[#ff5722] hover:bg-[#ffe6e1] focus:outline-none focus:ring-2 focus:ring-[#ff5722]" type="submit">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </form>
+  </header>
+  <!-- Sub navigation -->
+  <nav class="bg-[#ff7043] text-white text-xs px-4 py-1 select-none overflow-x-auto whitespace-nowrap scrollbar-hide">
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+   sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    Sepatu
+   </a>
+   <a class="inline-block mr-3 hover:underline" href="#">
+    sepatu
+   </a>
+  </nav>
+  <!-- Breadcrumb -->
+  <nav class="px-4 py-2 text-xs text-[#1a73e8] select-none flex flex-wrap gap-1">
+   <a class="hover:underline" href="#">
+    Shopee
+   </a>
+   <span>
+    &gt;
+   </span>
+   <a class="hover:underline" href="#">
+    sepatu
+   </a>
+   <span>
+    &gt;
+   </span>
+   <span>
+    &gt;
+   </span>
+   <a class="hover:underline font-semibold" href="#">
+    style sepatu
+   </a>
+   <span>
+    &gt;
+   </span>
+   <span class="text-[#222222] truncate max-w-[60vw]">
+    sepatu nike
+   </span>
+  </nav>
+  <!-- Main product section -->
+  <main class="max-w-7xl mx-auto bg-white mt-4 p-4">
+   <div class="flex flex-col md:flex-row gap-6">
+    <!-- Left: Product images -->
+    <section class="flex flex-col space-y-3 flex-shrink-0 max-w-[320px] md:max-w-[400px]">
+     <div class="relative border border-gray-200 rounded-md overflow-hidden">
+      <img alt="sepatu" class="object-contain w-full h-auto" decoding="async" height="400" loading="lazy" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwsLSc5seA_i-ieIUnxVv0H5IrmtJmpksimzreKBDWnaVSMTZFWCozEnll4_1fjXBgA16BICAYJVipR6vNNcpFFvg8jjmN2m0i75Ie7PB2Siuo4H3v29wJbsh98OXL-0BiL9VhXqlvlJk/s320-rw/sepatu-nike-wanita-f5.jpg" title="sepatu-nike-wanita-f5" alt="sepatu-nike-wanita-f5"  width="400"/>
+     </div>
+     <div class="flex items-center space-x-2 text-sm text-[#222222] select-none">
+      </a>
+      <a aria-label="Share on Facebook Messenger" class="text-[#0084ff] hover:underline" href="#">
+       <i class="fab fa-facebook-messenger">
+       </i>
+      </a>
+      <a aria-label="Share on Pinterest" class="text-[#bd081c] hover:underline" href="#">
+       <i class="fab fa-pinterest-p">
+       </i>
+      </a>
+      <a aria-label="Share on Twitter" class="text-[#1da1f2] hover:underline" href="#">
+       <i class="fab fa-twitter">
+       </i>
+      </a>
+      <div class="flex items-center space-x-1 ml-6 cursor-pointer select-none">
+       <i class="far fa-heart text-[#ff5722]">
+       </i>
+       <span>
+        Favorit (995)
+       </span>
+      </div>
+     </div>
+    </section>
+    <!-- Right: Product details -->
+    <section class="flex-grow min-w-0">
+     <div class="flex flex-col space-y-2">
+      <div class="flex items-center space-x-2">
+       <span class="bg-[#ff5722] text-white text-xs font-semibold px-1.5 py-[2px] rounded select-none">
+        Star+
+       </span>
+       <h1 class="text-[#222222] font-semibold text-base leading-tight">
+       sepatu zoom nike putih hitam
+       </h1>
+      </div>
+      <div class="flex items-center space-x-4 text-xs text-[#222222] select-none">
+       <div class="flex items-center space-x-1">
+        <span class="font-semibold">
+         4.8
+        </span>
+        <div class="flex text-yellow-400">
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+         <i class="fas fa-star">
+         </i>
+        </div>
+       </div>
+       <div>
+        1,9RB Penilaian
+       </div>
+       <div>
+        3,8RB Terjual
+       </div>
+       <button class="text-xs text-[#666666] hover:underline focus:outline-none">
+        Laporkan
+       </button>
+      </div>
+      <div class="bg-[#fafafa] border border-[#f0f0f0] rounded-md py-3 px-4 text-[#ff5722] font-semibold text-xl select-none">
+       Rp500
+      </div>
+      <div class="grid grid-cols-3 gap-y-3 gap-x-6 text-xs text-[#222222] select-none">
+       <div>
+        Grosir
+       </div>
+       <div class="col-span-2 flex items-center space-x-1">
+        <span>
+         Beli (&gt;=2) Rp57.300
+        </span>
+        <a class="text-[#003a8c] font-semibold hover:underline" href="#">
+         Selengkapnya &gt;
+        </a>
+       </div>
+       <div>
+        Pengiriman
+       </div>
+       <div class="col-span-2 flex items-center space-x-1 text-[#00897b]">
+        <i class="fas fa-truck">
+        </i>
+        <span>
+         Garansi tiba: 21 - 22 Mei
+        </span>
+        <button aria-label="More info about shipping" class="text-[#666666] hover:underline focus:outline-none">
+         &gt;
+        </button>
+       </div>
+       <div class="col-span-2 text-[10px] text-[#666666] ml-5">
+        Dapatkan Voucher s/d Rp10.000 jika pesanan terlambat.
+       </div>
+       <div>
+        Jaminan Shopee
+       </div>
+       <div class="col-span-2 flex items-center space-x-1 text-[#d32f2f]">
+        <i class="fas fa-shield-alt">
+        </i>
+        <span>
+         Bebas
+         <strong>
+          Pengembalian
+         </strong>
+         · Proteksi Kerusakan +
+        </span>
+       </div>
+       <div class="col-span-2 flex items-center space-x-2">
+        <button aria-pressed="true" class="flex items-center space-x-1 border border-[#ff5722] rounded px-2 py-0.5 text-xs text-[#ff5722] font-semibold focus:outline-none">
+       </div>
+       <div>
+        Kuantitas (kosong)
+       </div>
+       <div class="col-span-2 flex items-center space-x-3">
+        <button aria-label="Decrease quantity" class="border border-gray-300 rounded px-2 py-0.5 text-lg font-semibold text-[#222222] focus:outline-none">
+         −
+        </button>
+        <input aria-label="Quantity input" class="w-8 text-center border border-gray-300 rounded py-0.5 text-sm text-[#222222] focus:outline-none" readonly="" type="text" value="1"/>
+        <button aria-label="Increase quantity" class="border border-gray-300 rounded px-2 py-0.5 text-lg font-semibold text-[#222222] focus:outline-none">
+         +
+        </button>
+        <span class="text-xs text-[#666666] select-text">
+         tersisa 1 buah
+        </span>
+       </div>
+      </div>
+      <div class="flex space-x-3 mt-6">
+       <button aria-label="Add to cart" class="flex items-center space-x-2 border border-[#ffccbc] text-[#ff5722] rounded px-4 py-2 text-sm font-semibold hover:bg-[#fff0e6] focus:outline-none focus:ring-2 focus:ring-[#ff5722]">
+        <i class="fas fa-shopping-cart">
+        </i>
+        <span>
+         Masukkan Keranjang
+        </span>
+       </button>
+       <button aria-label="Buy now" class="bg-[#ff5722] text-white rounded px-6 py-2 text-sm font-semibold hover:bg-[#e64a19] focus:outline-none focus:ring-2 focus:ring-[#ff5722]">
+        Beli Sekarang
+       </button>
+      </div>
+     </div>
+    </section>
+   </div>
+  </main>
+ </body>
+</html>
