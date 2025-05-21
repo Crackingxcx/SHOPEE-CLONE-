@@ -1,0 +1,371 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee Voucher Page with Cart Right Aligned
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <!-- Top bar -->
+  <div class="bg-[#FF5722] text-white text-xs flex items-center justify-between px-3 py-1 select-none">
+   <div class="flex space-x-3 items-center">
+    <a class="hover:underline" href="#">
+     Seller Centre
+    </a>
+    <span>
+     |
+    </span>
+    <a class="hover:underline" href="#">
+     Download
+    </a>
+    <span>
+     |
+    </span>
+    <a class="hover:underline" href="#">
+     Ikuti kami
+    </a>
+    <a aria-label="Facebook" class="hover:underline" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a aria-label="Twitter" class="hover:underline" href="#">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a aria-label="Instagram" class="hover:underline" href="#">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+    <a aria-label="YouTube" class="hover:underline" href="#">
+     <i class="fab fa-youtube">
+     </i>
+    </a>
+   </div>
+   <div class="flex items-center space-x-3 text-xs">
+    <a class="flex items-center space-x-1 hover:underline" href="#">
+     <i class="far fa-bell">
+     </i>
+     <span>
+      Notifikasi
+     </span>
+    </a>
+    <a class="flex items-center space-x-1 hover:underline" href="#">
+     <i class="far fa-question-circle">
+     </i>
+     <span>
+      Bantuan
+     </span>
+    </a>
+    <div class="relative group">
+     <button class="flex items-center space-x-1 hover:underline">
+      <span>
+       Bahasa Indonesia
+      </span>
+      <i class="fas fa-chevron-down text-[8px]">
+      </i>
+     </button>
+     <ul class="absolute hidden group-hover:block bg-white text-black text-xs border border-gray-200 rounded shadow top-full right-0 w-36 z-10" role="menu">
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       English
+      </li>
+      <li class="px-3 py-1 hover:bg-gray-100 cursor-pointer">
+       Bahasa Indonesia
+      </li>
+     </ul>
+    </div>
+    <a class="hover:underline" href="#">
+     123soerya.id
+    </a>
+   </div>
+  </div>
+  <!-- Header with logo, search and cart right aligned -->
+  <header class="bg-[#FF5722] px-4 py-3 flex items-center space-x-4">
+   <a class="flex-shrink-0" href="#">
+    <img alt="Shopee logo in white on orange background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/0e3d46a8-0e8d-4e8a-9729-be6dd0b3cc8a.jpg" width="80"/>
+   </a>
+   <form class="flex flex-grow max-w-3xl">
+    <input aria-label="Search" class="flex-grow rounded-l-md px-3 py-2 text-sm focus:outline-none" placeholder="SPayLater Diskon 100%" type="text" style="min-width:0"/>
+    <button aria-label="Search button" class="bg-white text-[#FF5722] px-4 rounded-r-md hover:bg-gray-100 focus:outline-none" type="submit">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </form>
+   <div class="flex-1 flex justify-end max-w-[120px]">
+    <a aria-label="Cart menu" class="relative text-white hover:text-gray-200" href="#">
+     <i class="fas fa-shopping-cart text-xl">
+     </i>
+     <span class="absolute -top-1 -right-2 bg-red-600 text-[10px] font-semibold rounded-full px-[5px] leading-none select-none">
+      0
+     </span>
+    </a>
+   </div>
+  </header>
+  <!-- Promo banner below search -->
+  <div class="bg-[#FF5722] text-white text-[10px] px-4 py-1 flex justify-center space-x-4 select-none">
+   <span>
+    Promo Hari Ini
+   </span>
+   <span>
+    Gratis Ongkir 0 Rupiah
+   </span>
+   <span>
+    HP Gratis Rp 1.000.000
+   </span>
+   <span>
+    Bayar dengan DANA
+   </span>
+   <span>
+    Rp 0 Resik
+   </span>
+   <span>
+    CD RAM 8 GB
+   </span>
+   <span>
+    Payment Main
+   </span>
+   <span>
+    HP Diskon Lebih 100 Ribu
+   </span>
+  </div>
+  <!-- Voucher icons row -->
+  <section class="max-w-5xl mx-auto mt-4 px-4">
+   <div class="flex justify-between text-center text-gray-400 text-[10px] select-none">
+    <div class="flex flex-col items-center space-y-1 w-1/5">
+     <img alt="Icon representing Gratis Ongkir voucher with white background and gray border" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/d17e1646-e6d6-443e-5893-315005382338.jpg" width="40"/>
+     <span class="font-semibold text-gray-500">
+      Voucher Gratis Ongkir
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-1 w-1/5">
+     <img alt="Icon representing Voucher Diskon with white background and gray border" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/d0520e41-cfc2-48c5-93b4-b428cec64d92.jpg" width="40"/>
+     <span class="font-semibold text-gray-500">
+      Voucher Diskon
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-1 w-1/5">
+     <img alt="Icon representing Pulsa, Tagihan &amp; Tiket with white background and gray border" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/0f8b2e6a-b57a-47c6-6594-9d65c3b3909b.jpg" width="40"/>
+     <span class="font-semibold text-gray-500">
+      Pulsa, Tagihan &amp; Tiket
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-1 w-1/5">
+     <img alt="Icon representing Flash Voucher with white background and gray border" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/46c910ff-19af-4c18-6196-684bcc58f4d3.jpg" width="40"/>
+     <span class="font-semibold text-gray-500">
+      Flash Voucher
+     </span>
+    </div>
+    <div class="flex flex-col items-center space-y-1 w-1/5">
+     <img alt="Icon representing Voucher Toko with white background and gray border" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/84142fa2-af56-4554-a43b-92a251dcad9f.jpg" width="40"/>
+     <span class="font-semibold text-gray-500">
+      Voucher Toko
+     </span>
+    </div>
+   </div>
+  </section>
+  <!-- Large main banner -->
+  <section class="max-w-5xl mx-auto mt-4 px-4">
+   <img alt="Large orange banner with text SEMUA TOKO GRATIS ONGKIR XTRA MIN. BELANJA 30RB! with Shopee boxes flying on sides" class="w-full rounded-md object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/bcef97df-08f3-4fea-9412-832bcb0e257c.jpg" width="900"/>
+  </section>
+  <!-- Voucher Gratis Ongkir label -->
+  <section class="max-w-5xl mx-auto mt-6 px-4">
+   <div class="inline-block bg-[#FF5722] text-white text-sm font-semibold px-3 py-1 rounded-r-md select-none">
+    VOUCHER GRATIS ONGKIR
+   </div>
+  </section>
+  <!-- Second banner -->
+  <section class="max-w-5xl mx-auto mt-3 px-4">
+   <img alt="Orange banner with text GRATIS ONGKIR XTRA SETIAP MINGGU MIN. BELANJA 30RB! with delivery boxes and gift box" class="w-full rounded-md object-cover" height="150" src="https://storage.googleapis.com/a1aa/image/e2ad7292-2087-4208-911f-42fd15b8e026.jpg" width="900"/>
+  </section>
+  <!-- Voucher Gratis Ongkir Mingguan text -->
+  <section class="max-w-5xl mx-auto mt-4 px-4">
+   <p class="text-[#FF5722] text-xs font-semibold select-none">
+    VOUCHER GRATIS ONGKIR MINGGUAN
+   </p>
+  </section>
+  <!-- Voucher cards -->
+  <section class="max-w-5xl mx-auto mt-3 px-4 space-y-4 mb-8">
+   <!-- Card 1 -->
+   <div aria-label="Gratis Ongkir voucher with minimum purchase Rp0, valid until 25 Mei" class="flex border border-gray-200 rounded-lg shadow-sm overflow-hidden select-none" role="region">
+    <div class="bg-[#1F9E9E] flex flex-col justify-center items-center w-28 p-3 text-white text-xs font-semibold leading-tight text-center">
+     <img alt="Gratis Ongkir XTRA logo in white on teal background" class="mb-1" height="60" src="https://storage.googleapis.com/a1aa/image/678adccd-675c-48b6-62e0-4c3772312e7d.jpg" width="60"/>
+    </div>
+    <div class="flex flex-col justify-center flex-1 px-4 py-3">
+     <p class="font-bold text-sm text-gray-900">
+      Gratis Ongkir
+     </p>
+     <p class="text-xs text-gray-700">
+      Min. Blj Rp0
+     </p>
+     <p class="text-xs text-gray-500 mt-1">
+      Berlaku Hingga: 25 Mei
+      <a class="text-blue-700 font-semibold ml-1 hover:underline" href="#">
+       S&amp;K
+      </a>
+     </p>
+    </div>
+    <div class="flex items-center pr-4">
+     <button aria-label="Pakai voucher Gratis Ongkir" class="border border-[#1F9E9E] text-[#1F9E9E] rounded-md px-4 py-1 text-xs font-semibold hover:bg-[#1F9E9E] hover:text-white transition">
+      Pakai
+     </button>
+    </div>
+   </div>
+   <!-- Card 2 -->
+   <div aria-label="Gratis Ongkir voucher with minimum purchase Rp0, valid until 26 Mei" class="flex border border-gray-200 rounded-lg shadow-sm overflow-hidden select-none" role="region">
+    <div class="bg-[#1F9E9E] flex flex-col justify-center items-center w-28 p-3 text-white text-xs font-semibold leading-tight text-center">
+     <img alt="Gratis Ongkir XTRA logo in white on teal background" class="mb-1" height="60" src="https://storage.googleapis.com/a1aa/image/678adccd-675c-48b6-62e0-4c3772312e7d.jpg" width="60"/>
+    </div>
+    <div class="flex flex-col justify-center flex-1 px-4 py-3">
+     <p class="font-bold text-sm text-gray-900">
+      Gratis Ongkir
+     </p>
+     <p class="text-xs text-gray-700">
+      Min. Blj Rp0
+     </p>
+     <p class="text-xs text-gray-500 mt-1">
+      Berlaku Hingga: 26 Mei
+      <a class="text-blue-700 font-semibold ml-1 hover:underline" href="#">
+       S&amp;K
+      </a>
+     </p>
+    </div>
+    <div class="flex items-center pr-4">
+     <button aria-label="Pakai voucher Gratis Ongkir" class="border border-[#1F9E9E] text-[#1F9E9E] rounded-md px-4 py-1 text-xs font-semibold hover:bg-[#1F9E9E] hover:text-white transition">
+      Pakai
+     </button>
+    </div>
+   </div>
+   <!-- Card 3 -->
+   <div aria-label="Gratis Ongkir voucher with minimum purchase Rp0 for Fashion &amp; Kecantikan, valid until 25 Mei" class="flex border border-gray-200 rounded-lg shadow-sm overflow-hidden select-none relative" role="region">
+    <div class="bg-[#1F9E9E] flex flex-col justify-center items-center w-28 p-3 text-white text-xs font-semibold leading-tight text-center">
+     <img alt="Gratis Ongkir XTRA logo in white on teal background" class="mb-1" height="60" src="https://storage.googleapis.com/a1aa/image/678adccd-675c-48b6-62e0-4c3772312e7d.jpg" width="60"/>
+     <span class="mt-1 leading-tight">
+      FASHION &amp;
+      <br/>
+      KECANTIKAN
+     </span>
+    </div>
+    <div class="flex flex-col justify-center flex-1 px-4 py-3">
+     <p class="font-bold text-sm text-gray-900">
+      Gratis Ongkir
+     </p>
+     <p class="text-xs text-gray-700">
+      Min. Blj Rp0
+     </p>
+     <p class="text-xs text-gray-500 mt-1">
+      Berlaku Hingga: 25 Mei
+      <a class="text-blue-700 font-semibold ml-1 hover:underline" href="#">
+       S&amp;K
+      </a>
+     </p>
+    </div>
+    <div class="flex items-center pr-4">
+     <button aria-label="Pakai voucher Gratis Ongkir" class="border border-[#1F9E9E] text-[#1F9E9E] rounded-md px-4 py-1 text-xs font-semibold hover:bg-[#1F9E9E] hover:text-white transition">
+      Pakai
+     </button>
+    </div>
+    <div aria-label="Voucher quantity 3" class="absolute top-2 right-2 bg-white text-[#FF5722] text-xs font-semibold rounded px-1 select-none" style="box-shadow: 0 0 5px #FF5722;">
+     ×3
+    </div>
+   </div>
+  </section>
+
+  <footer
+    class="max-w-[3000px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 relative bg-white text-gray-600 text-[13px] leading-[1.3]"
+  >
+    <div class="flex flex-wrap justify-between gap-y-6">
+      <!-- Layanan Pelanggan -->
+      <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">LAYANAN PELANGGAN</p>
+        <ul class="space-y-[2px]">
+          <li><a class="text-blue-600 hover:underline" href="#">Bantuan</a></li>
+          <li><a class="text-blue-600 hover:underline" href="#">Metode Pembayaran</a></li>
+          <li><a class="hover:underline" href="#">ShopeePay</a></li>
+          <li><a class="hover:underline" href="#">Koin Shopee</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pesanan Pembeli</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pengiriman Penjual</a></li>
+          <li><a class="hover:underline" href="#">Gratis Ongkir</a></li>
+          <li><a class="hover:underline" href="#">Pengembalian Barang &amp; Dana</a></li>
+          <li><a class="hover:underline" href="#">Garansi Shopee</a></li>
+          <li><a class="hover:underline" href="#">Xtra Aman</a></li>
+          <li><a class="hover:underline" href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <!-- Jelajahi Shopee -->
+      <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">JELAJAHI SHOPEE</p>
+        <ul class="space-y-[2px]">
+          <li><a class="hover:underline" href="#">Tentang Kami</a></li>
+          <li><a class="hover:underline" href="#">Karir</a></li>
+          <li><a class="hover:underline" href="#">Kebijakan Shopee</a></li>
+          <li><a class="hover:underline" href="#">Kebijakan Privasi</a></li>
+          <li><a class="hover:underline" href="#">Blog</a></li>
+          <li><a class="hover:underline" href="#">Shopee Mall</a></li>
+          <li><a class="hover:underline" href="#">Seller Centre</a></li>
+          <li><a class="hover:underline" href="#">Flash Sale</a></li>
+          <li><a class="hover:underline" href="#">Kontak Media</a></li>
+          <li><a class="hover:underline" href="#">Shopee Affiliate</a></li>
+        </ul>
+      </div>
+      <!-- Pembayaran -->
+      <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">PEMBAYARAN</p>
+        <div class="flex flex-wrap gap-1">
+          <img alt="BCA bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/69ce7e07-9e23-413c-7e4e-da445d5e616e.jpg" width="50"/>
+          <img alt="CIMB Niaga bank logo with red text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/00b18edf-dfeb-4e8e-178c-916f9b639716.jpg" width="50"/>
+          <img alt="BNI bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/cd2e0e2c-1962-4b20-f377-7d2e08ad1062.jpg" width="50"/>
+          <img alt="Mandiri bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/6530679f-9bae-4038-1a8e-527daadd0274.jpg" width="50"/>
+          <img alt="Indomaret logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/73d1a0ff-3416-4c2b-4386-c1b367b491bb.jpg" width="50"/>
+          <img alt="Alfamart logo with red text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/e1154af9-0212-4738-0c56-78e5b494ac96.jpg" width="50"/>
+        </div>
+      </div>
+      <!-- Ikuti Kami -->
+      <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">IKUTI KAMI</p>
+        <ul class="space-y-[6px] text-[13px]">
+          <li class="flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"><i class="fab fa-facebook-f"></i></span>
+            <a class="hover:underline" href="#">Facebook</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"><i class="fab fa-instagram"></i></span>
+            <a class="hover:underline" href="#">Instagram</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"><i class="fab fa-twitter"></i></span>
+            <a class="hover:underline" href="#">Twitter</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"><i class="fab fa-linkedin-in"></i></span>
+            <a class="hover:underline" href="#">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Download Aplikasi Shopee moved down to align with Facebook text -->
+    <div class="absolute right-0 flex items-center gap-3" style="top: 3.3rem;">
+      <img alt="Black and white QR code for Shopee app download" class="h-[70px] w-[70px]" height="70" src="https://storage.googleapis.com/a1aa/image/628b6677-c1bb-44a8-419f-704326749a1d.jpg" width="70"/>
+      <div class="flex flex-col space-y-2">
+        <img alt="Google Play store logo with multicolor icon and text" class="h-[30px] w-auto" height="30" src="https://storage.googleapis.com/a1aa/image/7a009d85-3ddb-4f73-4c8f-6cbb5e692762.jpg" width="100"/>
+        <img alt="Apple App Store logo with black apple icon and text" class="h-[30px] w-auto" height="30" src="https://storage.googleapis.com/a1aa/image/d20488b9-ee66-4c61-85c2-825d79f84c19.jpg" width="100"/>
+      </div>
+    </div>
+    <hr class="border-t border-gray-300 my-6"/>
+    <div class="flex flex-col sm:flex-row justify-between text-[12px] text-gray-500">
+      <div>© Shopee 2020. Hak Cipta Dilindungi</div>
+      <div class="mt-2 sm:mt-0">
+        Negara: Singapura | Indonesia | Taiwan | Thailand | Malaysia | Vietnam | Filipina |
+      </div>
+    </div>
+  </footer>
+ </body>
+</html>
