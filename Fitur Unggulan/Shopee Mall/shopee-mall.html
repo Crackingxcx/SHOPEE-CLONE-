@@ -1,0 +1,532 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Shopee Mall
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-black">
+  <!-- Top bar -->
+  <div class="bg-[#d90429] text-white text-xs px-4 py-1 flex flex-wrap justify-between items-center gap-2">
+   <div class="flex flex-wrap items-center gap-2">
+    <span>
+     Halaman Utama Shopee
+    </span>
+    <span>
+     |
+    </span>
+    <a class="hover:underline" href="#">
+     Download
+    </a>
+    <span>
+     |
+    </span>
+    <span>
+     Ikuti kami di
+    </span>
+    <a aria-label="Facebook" class="hover:opacity-80" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a aria-label="Instagram" class="hover:opacity-80" href="#">
+     <i class="fab fa-instagram">
+     </i>
+    </a>
+    <a aria-label="Shopee" class="hover:opacity-80" href="#">
+     <i class="fas fa-grin-alt">
+     </i>
+    </a>
+   </div>
+   <div class="flex flex-wrap items-center gap-4 text-xs">
+    <button class="flex items-center gap-1 hover:underline">
+     <i class="far fa-bell">
+     </i>
+     <span>
+      Notifikasi
+     </span>
+     <span class="bg-white text-[#d90429] rounded-full text-[10px] font-semibold px-[6px] py-[1px]">
+      1
+     </span>
+    </button>
+    <a class="flex items-center gap-1 hover:underline" href="#">
+     <i class="far fa-question-circle">
+     </i>
+     <span>
+      Bantuan
+     </span>
+    </a>
+    <button class="flex items-center gap-1 hover:underline">
+     <i class="fas fa-globe">
+     </i>
+     <span>
+      Bahasa Indonesia
+     </span>
+     <i class="fas fa-chevron-down text-[10px]">
+     </i>
+    </button>
+    <a class="flex items-center gap-1 hover:underline" href="#">
+     <img alt="User profile picture of 123soerya.id" class="rounded-full" height="24" src="" width="24"/>
+     <span>
+      User Profile
+     </span>
+    </a>
+   </div>
+  </div>
+  <!-- Header with logo and search -->
+  <header class="bg-[#d90429] px-6 py-4 flex flex-wrap items-center justify-between gap-4">
+   <div class="flex items-center gap-2 flex-shrink-0">
+    <img alt="Shopee Mall logo icon, white shopping bag with red S" height="40" src="https://storage.googleapis.com/a1aa/image/af961216-e9ca-41cc-844b-b75f52cd770e.jpg" width="40"/>
+    <div class="text-white text-2xl font-semibold tracking-wide select-none">
+     Shopee Mall
+    </div>
+   </div>
+   <form aria-label="Search Shopee Mall" class="flex flex-grow max-w-xl w-full" role="search">
+    <input aria-label="Search input" class="flex-grow rounded-l border border-white px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-white" placeholder="Cari di Shopee Mall" type="search"/>
+    <button aria-label="Search button" class="bg-white text-[#d90429] px-4 py-2 rounded-r hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white" type="submit">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </form>
+   <button aria-label="Shopping cart with 3 items" class="relative text-white hover:text-gray-200 flex-shrink-0">
+    <i class="fas fa-shopping-cart fa-lg">
+    </i>
+    <span class="absolute -top-1 -right-2 bg-[#d90429] text-white rounded-full text-[10px] font-semibold px-[6px] py-[1px] border border-white">
+     3
+    </span>
+   </button>
+  </header>
+  <!-- Banner section -->
+  <section class="flex flex-wrap justify-center md:justify-start gap-2 px-6 py-4 max-w-[1200px] mx-auto">
+   <div class="flex-shrink-0 w-full md:w-[65%] rounded overflow-hidden">
+    <img alt="BrandDay banner with Olay, Pantene, Head &amp; Shoulders products on blue background with Shopee Mall 100% Ori, Diskon s/d 60%, Menangkan Oven text" class="w-full h-auto" height="180" src="https://storage.googleapis.com/a1aa/image/9e959441-c86b-490e-1527-4c8fe764176a.jpg" width="720"/>
+   </div>
+   <div class="flex flex-col gap-2 w-full md:w-[32%]">
+    <img alt="Mitu Baby banner with discount text 5%" class="rounded" height="85" src="https://storage.googleapis.com/a1aa/image/96bec9d1-55ba-40c8-55d7-31c4da41c17f.jpg" width="400"/>
+    <img alt="JudyDoll banner with discount text 50% and woman with makeup products" class="rounded" height="85" src="https://storage.googleapis.com/a1aa/image/d1199974-c656-4f0b-66e5-158654b80522.jpg" width="400"/>
+   </div>
+  </section>
+  <!-- Info bar -->
+  <section class="max-w-[1200px] mx-auto px-6 py-3 border-t border-b border-gray-200 flex flex-wrap justify-between text-sm text-gray-700">
+   <div class="flex items-center gap-2 flex-1 min-w-[180px]">
+    <div class="text-[#d90429] text-lg">
+     <i class="fas fa-undo-alt">
+     </i>
+    </div>
+    <div>
+     <div class="font-semibold">
+      15 Hr Pengembalian
+     </div>
+     <div class="text-xs text-gray-500">
+      Proses pengembalian gratis &amp; praktis
+     </div>
+    </div>
+   </div>
+   <div class="flex items-center gap-2 flex-1 min-w-[180px]">
+    <div class="text-[#d90429] text-lg">
+     <i class="fas fa-shield-alt">
+     </i>
+    </div>
+    <div>
+     <div class="font-semibold">
+      100% Ori
+     </div>
+     <div class="text-xs text-gray-500">
+      Garansi original atau uang kembali
+     </div>
+    </div>
+   </div>
+   <div class="flex items-center gap-2 flex-1 min-w-[180px]">
+    <div class="text-[#d90429] text-lg">
+     <i class="fas fa-truck">
+     </i>
+    </div>
+    <div>
+     <div class="font-semibold">
+      Gratis Ongkir
+     </div>
+     <div class="text-xs text-gray-500">
+      Min. belanja spesial se-Indonesia
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Features icons -->
+  <section class="max-w-[1200px] mx-auto px-6 py-6 flex flex-wrap justify-between gap-6">
+   <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
+    <div class="rounded-xl border border-gray-300 p-4 flex items-center justify-center w-[80px] h-[80px]">
+     <img alt="Diamond icon representing Shopee Premium" height="48" src="https://storage.googleapis.com/a1aa/image/e964b7f6-6005-47f2-fcca-b1455d063004.jpg" width="48"/>
+    </div>
+    <div class="mt-2 text-center text-sm leading-tight">
+     Shopee Premium
+    </div>
+   </div>
+   <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
+    <div class="rounded-xl border border-gray-300 p-4 flex items-center justify-center w-[80px] h-[80px]">
+     <img alt="Star card icon representing Brand Memberships" height="48" src="https://storage.googleapis.com/a1aa/image/10f3a8ab-4491-4238-8b4c-c9539f8aeabc.jpg" width="48"/>
+    </div>
+    <div class="mt-2 text-center text-sm leading-tight">
+     Brand Memberships
+    </div>
+   </div>
+   <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
+    <div class="rounded-xl border border-gray-300 p-4 flex items-center justify-center w-[80px] h-[80px]">
+     <img alt="Daily Deals icon with calendar and text" height="48" src="https://storage.googleapis.com/a1aa/image/944105aa-07d5-4143-61f7-aec9d40ceabb.jpg" width="48"/>
+    </div>
+    <div class="mt-2 text-center text-sm leading-tight">
+     Daily Deals
+    </div>
+   </div>
+   <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
+    <div class="rounded-xl border border-gray-300 p-4 flex items-center justify-center w-[80px] h-[80px]">
+     <img alt="Super Brand Day icon with red text" height="48" src="https://storage.googleapis.com/a1aa/image/36a86bf7-94c9-4ded-b181-a9f34754a593.jpg" width="48"/>
+    </div>
+    <div class="mt-2 text-center text-sm leading-tight">
+     Super Brand Day
+    </div>
+   </div>
+   <div class="flex flex-col items-center w-[100px] sm:w-[120px]">
+    <div class="rounded-xl border border-gray-300 p-4 flex items-center justify-center w-[80px] h-[80px]">
+     <img alt="Trending Brands icon with hashtag and text" height="48" src="https://storage.googleapis.com/a1aa/image/8aeda9d8-450e-44f8-0796-dabf589cb637.jpg" width="48"/>
+    </div>
+    <div class="mt-2 text-center text-sm leading-tight">
+     Trending Brands
+    </div>
+   </div>
+  </section>
+  <!-- Brand Pilihan Untukmu -->
+  <section class="max-w-[1200px] mx-auto px-6 py-4">
+   <div class="flex justify-between items-center mb-2">
+    <h2 class="text-[#d90429] font-semibold text-xs uppercase tracking-wide">
+     Brand Pilihan Untukmu
+    </h2>
+    <a class="text-[#d90429] text-xs flex items-center gap-1 hover:underline" href="#">
+     Lihat Semua
+     <i class="fas fa-chevron-right text-[10px]">
+     </i>
+    </a>
+   </div>
+   <div class="overflow-x-auto scrollbar-hide">
+    <div class="inline-flex min-w-[700px] border border-gray-200 rounded">
+     <div class="flex flex-wrap w-full">
+      <div class="w-1/6 border-r border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Infinix brand logo black text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/7e501377-222c-4f83-63b4-628c521348ca.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Samsung brand logo black text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/7167dbdb-cd70-44a7-d7b7-dce41e3d19d4.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Robot Smart Power brand logo green text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/8f7991cb-2899-47df-b1fd-8136829ea94d.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Gently Baby brand logo blue text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/2b89bc78-facd-4c5f-d8bf-bfa3a8461869.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Mama Bear brand logo white bear icon and text on dark background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/d8acf709-65b8-4735-7cb5-c25bef45d5c8.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-b border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Garnier brand logo green text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/f63045bb-0d9e-4f86-f01d-56b6bf4c109b.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-gray-200 p-4 flex justify-center items-center">
+       <img alt="P&amp;G brand logo white text on blue background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/2da1a992-3e55-4ebc-822d-c0d892e4fd34.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-gray-200 p-4 flex justify-center items-center">
+       <img alt="H&amp;M brand logo red text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/dc33bdcf-960a-4a47-c5e0-a5e7a24dcec9.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Abbott brand logo blue text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/2e3ca700-9e4b-49bd-3155-35a9a41ae0f4.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Amaterasun brand logo teal text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/a84c90c7-1eb6-4611-0218-afa835ceb8e3.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 border-r border-gray-200 p-4 flex justify-center items-center">
+       <img alt="Mi brand logo orange background with white text" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/74e6a269-28cb-44fd-eaf0-3ede9126db41.jpg" width="100"/>
+      </div>
+      <div class="w-1/6 p-4 flex justify-center items-center">
+       <img alt="L'Oréal Paris brand logo black text on white background" class="object-contain" height="40" src="https://storage.googleapis.com/a1aa/image/dcdc263c-d783-4b3c-5179-f442be9c4653.jpg" width="100"/>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Kategori -->
+  <section class="max-w-[1200px] mx-auto px-6 py-4">
+   <h3 class="text-[#d90429] font-semibold text-xs uppercase tracking-wide mb-4">
+    Kategori
+   </h3>
+   <div class="overflow-x-auto scrollbar-hide">
+    <div class="inline-flex min-w-[700px] gap-6">
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Elektronik category icon showing TV and blender" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/0537cfda-230c-4820-518b-e2c34f9fdc9a.jpg" width="48"/>
+      <span>
+       Elektronik
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Olahraga &amp; Outdoor category icon showing badminton racket and shuttlecock" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/b6ba5e4f-dd0d-4a8a-4828-82528a033b9f.jpg" width="48"/>
+      <span>
+       Olahraga &amp; Outdoor
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Makanan &amp; Minuman category icon showing milk bottle and chips" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/4e6b87b6-4fa3-4b9c-66e6-04e23e05c8ca.jpg" width="48"/>
+      <span>
+       Makanan &amp; Minuman
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Komputer &amp; Aksesoris category icon showing laptop" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/a0457b48-a1ad-4ece-a52d-783d350247f0.jpg" width="48"/>
+      <span>
+       Komputer &amp; Aksesoris
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Perawatan &amp; Kecantikan category icon showing skincare and cosmetics" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/1635b6ae-f75f-4764-b9a1-e0747efa6237.jpg" width="48"/>
+      <span>
+       Perawatan &amp; Kecantikan
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Perlengkapan Rumah category icon showing cookware and spatula" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/d3ca5ea0-e0d8-4819-a0ae-c52cdbc5677e.jpg" width="48"/>
+      <span>
+       Perlengkapan Rumah
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Tas Pria category icon showing black backpack" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/f38cf1c8-61ab-4828-80e8-eac25329d650.jpg" width="48"/>
+      <span>
+       Tas Pria
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Pakaian Wanita category icon showing beige jacket" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/1cd8886b-d29f-4c0f-2994-8d8335c926d8.jpg" width="48"/>
+      <span>
+       Pakaian Wanita
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Sepatu Pria category icon showing black and white sneakers" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/251f07bd-9221-4e64-bac7-fd352421b987.jpg" width="48"/>
+      <span>
+       Sepatu Pria
+      </span>
+     </div>
+     <div class="flex flex-col items-center w-[80px] shrink-0 text-center text-xs text-gray-700">
+      <img alt="Kesehatan category icon showing face mask and vitamin C bottle" class="mb-1" height="48" src="https://storage.googleapis.com/a1aa/image/96b3974c-3514-4289-fec0-dfcaa5a2771a.jpg" width="48"/>
+      <span>
+       Kesehatan
+      </span>
+     </div>
+    </div>
+   </div>
+  </section>
+  <footer class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 relative">
+   <div class="flex flex-wrap justify-between gap-y-6">
+    <!-- Layanan Pelanggan -->
+    <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+     <p class="text-[13px] font-semibold text-gray-700 mb-2">
+      LAYANAN PELANGGAN
+     </p>
+     <ul class="space-y-[2px]">
+      <li>
+       <a class="text-blue-600 hover:underline" href="#">
+        Bantuan
+       </a>
+      </li>
+      <li>
+       <a class="text-blue-600 hover:underline" href="#">
+        Metode Pembayaran
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        ShopeePay
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Koin Shopee
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Lacak Pesanan Pembeli
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Lacak Pengiriman Penjual
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Gratis Ongkir
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Pengembalian Barang &amp; Dana
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Garansi Shopee
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Xtra Aman
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Hubungi Kami
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Jelajahi Shopee -->
+    <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+     <p class="text-[13px] font-semibold text-gray-700 mb-2">
+      JELAJAHI SHOPEE
+     </p>
+     <ul class="space-y-[2px]">
+      <li>
+       <a class="hover:underline" href="#">
+        Tentang Kami
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Karir
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Kebijakan Shopee
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Kebijakan Privasi
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Blog
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Shopee Mall
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Seller Centre
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Flash Sale
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Kontak Media
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#">
+        Shopee Affiliate
+       </a>
+      </li>
+     </ul>
+    </div>
+    <!-- Pembayaran -->
+    <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+     <p class="text-[13px] font-semibold text-gray-700 mb-2">
+      PEMBAYARAN
+     </p>
+     <div class="flex flex-wrap gap-1">
+      <img alt="BCA bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/69ce7e07-9e23-413c-7e4e-da445d5e616e.jpg" width="50"/>
+      <img alt="CIMB Niaga bank logo with red text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/00b18edf-dfeb-4e8e-178c-916f9b639716.jpg" width="50"/>
+      <img alt="BNI bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/cd2e0e2c-1962-4b20-f377-7d2e08ad1062.jpg" width="50"/>
+      <img alt="Mandiri bank logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/6530679f-9bae-4038-1a8e-527daadd0274.jpg" width="50"/>
+      <img alt="Indomaret logo with blue text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/73d1a0ff-3416-4c2b-4386-c1b367b491bb.jpg" width="50"/>
+      <img alt="Alfamart logo with red text on white background" class="h-5 w-auto" height="20" src="https://storage.googleapis.com/a1aa/image/e1154af9-0212-4738-0c56-78e5b494ac96.jpg" width="50"/>
+     </div>
+    </div>
+    <!-- Ikuti Kami -->
+    <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+     <p class="text-[13px] font-semibold text-gray-700 mb-2">
+      IKUTI KAMI
+     </p>
+     <ul class="space-y-[6px] text-[13px]">
+      <li class="flex items-center gap-2">
+       <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs">
+        <i class="fab fa-facebook-f">
+        </i>
+       </span>
+       <a class="hover:underline" href="#">
+        Facebook
+       </a>
+      </li>
+      <li class="flex items-center gap-2">
+       <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs">
+        <i class="fab fa-instagram">
+        </i>
+       </span>
+       <a class="hover:underline" href="#">
+        Instagram
+       </a>
+      </li>
+      <li class="flex items-center gap-2">
+       <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs">
+        <i class="fab fa-twitter">
+        </i>
+       </span>
+       <a class="hover:underline" href="#">
+        Twitter
+       </a>
+      </li>
+      <li class="flex items-center gap-2">
+       <span class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs">
+        <i class="fab fa-linkedin-in">
+        </i>
+       </span>
+       <a class="hover:underline" href="#">
+        Linkedin
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+   <!-- Download Aplikasi Shopee moved down to align with Facebook text -->
+   <div class="absolute right-0 flex items-center gap-3" style="top: 3.3rem;">
+    <img alt="Black and white QR code for Shopee app download" class="h-[70px] w-[70px]" height="70" src="https://storage.googleapis.com/a1aa/image/628b6677-c1bb-44a8-419f-704326749a1d.jpg" width="70"/>
+    <div class="flex flex-col space-y-2">
+     <img alt="Google Play store logo with multicolor icon and text" class="h-[30px] w-auto" height="30" src="https://storage.googleapis.com/a1aa/image/7a009d85-3ddb-4f73-4c8f-6cbb5e692762.jpg" width="100"/>
+     <img alt="Apple App Store logo with black apple icon and text" class="h-[30px] w-auto" height="30" src="https://storage.googleapis.com/a1aa/image/d20488b9-ee66-4c61-85c2-825d79f84c19.jpg" width="100"/>
+    </div>
+   </div>
+   <hr class="border-t border-gray-300 my-6"/>
+   <div class="flex flex-col sm:flex-row justify-between text-[12px] text-gray-500">
+    <div>
+     © Shopee 2020. Hak Cipta Dilindungi
+    </div>
+    <div class="mt-2 sm:mt-0">
+     Negara: Singapura | Indonesia | Taiwan | Thailand | Malaysia | Vietnam | Filipina |
+    </div>
+   </div>
+  </footer>
+ </body>
+</html>
