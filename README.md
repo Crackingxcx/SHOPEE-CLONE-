@@ -1,5 +1,5 @@
 # SHOPEE-CLONE-
-Poject Shopee Clone XI TKJ-4
+Project Shopee Clone XI TKJ-4
         <h2>Teknologi yang Digunakan:</h2>
         <ul>
             <li>HTML: Struktur dasar dan konten halaman web.</li>
