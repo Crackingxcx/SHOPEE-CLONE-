@@ -1,0 +1,1222 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Shopee Supermarket</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Custom scrollbar for horizontal scroll containers */
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <!-- Top bar -->
+  <div class="bg-[#0B74E9] text-white text-xs flex justify-center">
+    <div class="max-w-[1200px] w-full flex items-center gap-2 px-4 py-1 select-none">
+      <a class="hover:underline" href="#">Seller Centre</a>
+      <span>|</span>
+      <a class="hover:underline" href="#">Download</a>
+      <span>|</span>
+      <span>Ikuti kami di</span>
+      <a aria-label="Facebook" class="hover:text-gray-300" href="#"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a aria-label="Instagram" class="hover:text-gray-300" href="#"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a aria-label="Line" class="hover:text-gray-300" href="#"
+        ><i class="fab fa-line"></i
+      ></a>
+      <div class="ml-auto flex items-center gap-4 text-xs whitespace-nowrap">
+        <a class="flex items-center gap-1 hover:underline" href="#"
+          ><i class="far fa-bell"></i><span>Notifikasi</span></a
+        >
+        <a class="flex items-center gap-1 hover:underline" href="#"
+          ><i class="far fa-question-circle"></i><span>Bantuan</span></a
+        >
+        <div class="flex items-center gap-1 cursor-pointer select-none">
+          <span>Bahasa Indonesia</span>
+          <i class="fas fa-chevron-down text-[8px]"></i>
+        </div>
+        <a class="flex items-center gap-1 hover:underline" href="#">
+          <img
+            alt="User avatar"
+            class="rounded-full"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/e6f43d0e-05ee-4e04-7c98-99d70dab57cf.jpg"
+            width="20"
+          />
+          <span>123soerya.id</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Header with logo and search -->
+  <header class="bg-[#0B74E9]">
+    <div class="max-w-[1200px] mx-auto px-4 flex items-center gap-4 py-3">
+      <a class="flex items-center gap-2 shrink-0" href="#">
+        <img
+          alt="Shopee logo"
+          class="bg-white rounded-sm"
+          height="24"
+          src="https://storage.googleapis.com/a1aa/image/bf76f49c-a56e-4cba-2406-76187757d746.jpg"
+          width="24"
+        />
+        <span class="text-white font-semibold text-lg select-none">Shopee Supermarket</span>
+        <span
+          class="bg-[#E1E6E3] text-[#6B7A67] text-xs font-semibold rounded-md px-2 py-[2px] select-none"
+          >Ikuti</span
+        >
+      </a>
+      <form class="flex-grow max-w-[600px]">
+        <label class="sr-only" for="search">Cari di Shopee Supermarket</label>
+        <div class="relative w-full">
+          <input
+            class="w-full rounded-sm py-2 pl-4 pr-10 text-sm focus:outline-none"
+            id="search"
+            placeholder="Cari di Shopee Supermarket"
+            type="search"
+          />
+          <button
+            aria-label="Search"
+            class="absolute right-1 top-1/2 -translate-y-1/2 bg-white text-[#0B74E9] px-3 py-1 rounded-sm"
+            type="submit"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+      <div class="flex items-center gap-4 text-white text-sm cursor-pointer select-none shrink-0">
+        <div class="relative">
+          <i class="fas fa-shopping-cart text-xl"></i>
+          <div
+            class="absolute -top-1 -right-2 bg-[#0B74E9] text-white text-[10px] font-semibold rounded-full w-5 h-5 flex items-center justify-center border border-white"
+          >
+            3
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation tabs -->
+  <nav class="max-w-[1200px] mx-auto px-4 border-b border-gray-200">
+    <ul class="flex gap-8 text-sm font-medium text-gray-600 select-none">
+      <li class="border-b-2 border-[#0B74E9] text-[#0B74E9] pb-3 cursor-pointer">Supermarket</li>
+      <li class="pb-3 cursor-pointer hover:text-[#0B74E9]">Promo</li>
+      <li class="pb-3 cursor-pointer hover:text-[#0B74E9]">Semua Produk</li>
+    </ul>
+  </nav>
+  <!-- Banner slider -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-4 relative select-none">
+    <div id="slider" class="relative overflow-hidden rounded-md h-[280px]">
+      <!-- Slides container -->
+      <div class="flex transition-transform duration-700 ease-in-out" style="width:500%">
+        <!-- Slide 1 -->
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            alt="Shopee Supermarket P&amp;G Best Deal Personal Care Diskon S/D 60% banner with Downy, Pantene, Head &amp; Shoulders products and a plant on a white shelf"
+            class="w-full h-[280px] object-cover"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/f4acf77d-f025-431e-6d56-8eab0d83e9e1.jpg"
+            width="1200"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            alt="Shopee Supermarket Promo Banner 2"
+            class="w-full h-[280px] object-cover"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/1f3a7a3a-3a0a-4a3a-9a3a-1a3a7a3a3a3a.jpg"
+            width="1200"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            alt="Shopee Supermarket Promo Banner 3"
+            class="w-full h-[280px] object-cover"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/2f3a7a3a-3a0a-4a3a-9a3a-2a3a7a3a3a3a.jpg"
+            width="1200"
+          />
+        </div>
+        <!-- Slide 4 -->
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            alt="Shopee Supermarket Promo Banner 4"
+            class="w-full h-[280px] object-cover"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/3f3a7a3a-3a0a-4a3a-9a3a-3a3a7a3a3a3a.jpg"
+            width="1200"
+          />
+        </div>
+        <!-- Slide 5 -->
+        <div class="w-full flex-shrink-0 relative">
+          <img
+            alt="Shopee Supermarket Promo Banner 5"
+            class="w-full h-[280px] object-cover"
+            height="280"
+            src="https://storage.googleapis.com/a1aa/image/4f3a7a3a-3a0a-4a3a-9a3a-4a3a7a3a3a3a.jpg"
+            width="1200"
+          />
+        </div>
+      </div>
+      <!-- Carousel dots -->
+      <div
+        id="dots"
+        class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10"
+      >
+        <button
+          aria-label="Slide 1"
+          class="w-2 h-2 rounded-full bg-gray-300"
+          data-index="0"
+          type="button"
+        ></button>
+        <button
+          aria-label="Slide 2"
+          class="w-2 h-2 rounded-full bg-gray-300"
+          data-index="1"
+          type="button"
+        ></button>
+        <button
+          aria-label="Slide 3"
+          class="w-2 h-2 rounded-full bg-gray-300"
+          data-index="2"
+          type="button"
+        ></button>
+        <button
+          aria-label="Slide 4"
+          class="w-2 h-2 rounded-full bg-gray-300"
+          data-index="3"
+          type="button"
+        ></button>
+        <button
+          aria-label="Slide 5"
+          class="w-2 h-2 rounded-full bg-gray-300"
+          data-index="4"
+          type="button"
+        ></button>
+      </div>
+    </div>
+  </section>
+  <!-- Features below banner -->
+  <section
+    class="max-w-[1200px] mx-auto px-4 mt-4 border border-t-0 border-gray-200 rounded-b-md flex justify-between py-3 bg-white select-none text-xs text-gray-600"
+  >
+    <div class="flex items-center gap-2">
+      <img
+        alt="100% Ori icon"
+        height="20"
+        src="https://storage.googleapis.com/a1aa/image/088d03ad-af65-4428-ee9c-6a9778ece4f1.jpg"
+        width="20"
+      />
+      <span>100% Ori</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img
+        alt="Dikelola Shopee icon"
+        height="20"
+        src="https://storage.googleapis.com/a1aa/image/af29e8c3-3294-49dd-8b33-aaed4966cf36.jpg"
+        width="20"
+      />
+      <span>Dikelola Shopee</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <img
+        alt="700+ Brands icon"
+        height="20"
+        src="https://storage.googleapis.com/a1aa/image/cc4d5930-6220-41cf-4cbf-4da6d4f50305.jpg"
+        width="20"
+      />
+      <span>700+ Brands</span>
+    </div>
+  </section>
+  <!-- Category section -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-6">
+    <h3 class="text-xs font-bold text-[#0B74E9] mb-3 select-none">KATEGORI</h3>
+    <div
+      class="grid grid-cols-8 gap-y-6 gap-x-4 overflow-x-auto scrollbar-hide py-2"
+      style="scroll-snap-type: x mandatory;"
+    >
+      <!-- Each category item -->
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Bahan Pokok &amp; Bumbu Dapur product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/26d63358-3983-4284-d231-1299c058f9e8.jpg"
+            width="48"
+          />
+        </div>
+        <span>Bahan Pokok &amp; Bumbu Dapur</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Kebersihan Rumah product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/62968a42-6df0-4451-6ced-0e0935b83281.jpg"
+            width="48"
+          />
+        </div>
+        <span>Kebersihan Rumah</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Perawatan Tubuh product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/ca40727b-a94d-4a8e-a609-8ef23236c386.jpg"
+            width="48"
+          />
+        </div>
+        <span>Perawatan Tubuh</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Makanan Instan product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/66725a3b-fb95-4313-7347-ddf145f97eed.jpg"
+            width="48"
+          />
+        </div>
+        <span>Makanan Instan</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Perawatan Wajah product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/8421264e-c556-4730-a98f-031957fe8881.jpg"
+            width="48"
+          />
+        </div>
+        <span>Perawatan Wajah</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Produk Kewanitaan product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/0116750d-2c19-42bd-4c5f-95b00c672f55.jpg"
+            width="48"
+          />
+        </div>
+        <span>Produk Kewanitaan</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Susu Formula &amp; Makanan Bayi product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/63924916-943d-41bf-6d5b-f7984a0a5a06.jpg"
+            width="48"
+          />
+        </div>
+        <span>Susu Formula &amp; Makanan Bayi</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Suplement &amp; Vitamin product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/30a477ed-88ba-43bf-8c2a-99addb30f39f.jpg"
+            width="48"
+          />
+        </div>
+        <span>Suplement &amp; Vitamin</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Makanan Ringan product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/ecca44c1-507c-490a-548d-ce8fd36c9e08.jpg"
+            width="48"
+          />
+        </div>
+        <span>Makanan Ringan</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Perawatan Rambut product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/d7212544-6cd0-4f9a-74c7-cb8fd105fa9f.jpg"
+            width="48"
+          />
+        </div>
+        <span>Perawatan Rambut</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Minuman product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/e57b61de-4ecf-424a-db2e-1662bf737235.jpg"
+            width="48"
+          />
+        </div>
+        <span>Minuman</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Perawatan Gigi &amp; Mulut product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/72ecff0c-7f15-43ef-12f3-1c2b7ee1277f.jpg"
+            width="48"
+          />
+        </div>
+        <span>Perawatan Gigi &amp; Mulut</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Susu &amp; Keju product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/39a15b6f-3594-4180-674d-0417a88377c8.jpg"
+            width="48"
+          />
+        </div>
+        <span>Susu &amp; Keju</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Menu Sarapan product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/faa3d71b-3a9e-4ec6-f1cc-df38ba47b43b.jpg"
+            width="48"
+          />
+        </div>
+        <span>Menu Sarapan</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Perawatan Pria product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/b284035e-194a-4a4c-47c8-675a2f9b05d5.jpg"
+            width="48"
+          />
+        </div>
+        <span>Perawatan Pria</span>
+      </div>
+      <div
+        class="flex flex-col items-center text-[9px] text-center text-gray-600 cursor-pointer select-none scroll-snap-align-start"
+      >
+        <div class="bg-gray-100 rounded-full p-3 mb-1">
+          <img
+            alt="Kebutuhan Medis product image"
+            class="rounded-full"
+            height="48"
+            src="https://storage.googleapis.com/a1aa/image/1f0f7e99-8b8e-417e-af70-b910644c18fb.jpg"
+            width="48"
+          />
+        </div>
+        <span>Kebutuhan Medis</span>
+      </div>
+    </div>
+  </section>
+  <!-- Banner promo -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-6">
+    <img
+      alt="NIVEA Diskon S/D 35%, Penawaran Terbaik Diskon S/D 50%, Berhadiah Dove Beauty Bar banner with product images"
+      class="w-full rounded-md"
+      height="80"
+      src="https://storage.googleapis.com/a1aa/image/98b253b3-b389-4237-ae14-bf6ca8a02dac.jpg"
+      width="1200"
+    />
+  </section>
+  <!-- Voucher section -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-6">
+    <div class="flex justify-between items-center mb-2 select-none">
+      <h4 class="text-xs font-semibold text-gray-600">VOUCHER</h4>
+      <a class="text-xs text-gray-500 hover:underline" href="#">Lihat Lainnya &gt;</a>
+    </div>
+    <div class="flex gap-4 overflow-x-auto scrollbar-hide py-2">
+      <!-- Voucher card 1 -->
+      <div
+        class="flex-shrink-0 w-[320px] border border-gray-200 rounded-md p-3 bg-white text-xs text-gray-700"
+      >
+        <div class="flex items-center gap-2 mb-1">
+          <img
+            alt="Shopee Supermarket icon"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/1e1fee83-ebca-4109-c31b-03aca86fde2e.jpg"
+            width="20"
+          />
+          <div>
+            <div class="font-semibold text-[11px]">Diskon Rp10RB</div>
+            <div class="text-[9px] text-gray-400">Min. Blj Rp115RB</div>
+          </div>
+        </div>
+        <div class="text-[9px] text-red-400 mb-1">Produk Tertentu</div>
+        <div class="text-[8px] text-gray-400 mb-1">
+          Terpakai 30%, S/D: 31.05.2025
+          <a class="text-[#0B74E9]" href="#">S&amp;K</a>
+        </div>
+        <button
+          class="bg-[#0B74E9] text-white text-[10px] px-3 py-1 rounded-sm float-right"
+        >
+          Klaim
+        </button>
+      </div>
+      <!-- Voucher card 2 -->
+      <div
+        class="flex-shrink-0 w-[320px] border border-gray-200 rounded-md p-3 bg-white text-xs text-gray-700"
+      >
+        <div class="flex items-center gap-2 mb-1">
+          <img
+            alt="Shopee Supermarket icon"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/1e1fee83-ebca-4109-c31b-03aca86fde2e.jpg"
+            width="20"
+          />
+          <div>
+            <div class="font-semibold text-[11px]">Diskon Rp22RB</div>
+            <div class="text-[9px] text-gray-400">Min. Blj Rp225RB</div>
+          </div>
+        </div>
+        <div class="text-[9px] text-red-400 mb-1">Produk Tertentu</div>
+        <div class="text-[8px] text-gray-400 mb-1">
+          Terpakai 27%, S/D: 31.05.2025
+          <a class="text-[#0B74E9]" href="#">S&amp;K</a>
+        </div>
+        <button
+          class="bg-[#0B74E9] text-white text-[10px] px-3 py-1 rounded-sm float-right"
+        >
+          Klaim
+        </button>
+      </div>
+      <!-- Voucher card 3 -->
+      <div
+        class="flex-shrink-0 w-[320px] border border-gray-200 rounded-md p-3 bg-white text-xs text-gray-700"
+      >
+        <div class="flex items-center gap-2 mb-1">
+          <img
+            alt="Shopee Supermarket icon"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/1e1fee83-ebca-4109-c31b-03aca86fde2e.jpg"
+            width="20"
+          />
+          <div>
+            <div class="font-semibold text-[11px]">Diskon Rp37RB</div>
+            <div class="text-[9px] text-gray-400">Min. Blj Rp357RB</div>
+          </div>
+        </div>
+        <div class="text-[9px] text-red-400 mb-1">Produk Tertentu</div>
+        <div class="text-[8px] text-gray-400 mb-1">
+          Terpakai 69%, S/D: 31.05.2025
+          <a class="text-[#0B74E9]" href="#">S&amp;K</a>
+        </div>
+        <button
+          class="bg-[#0B74E9] text-white text-[10px] px-3 py-1 rounded-sm float-right"
+        >
+          Klaim
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- Flash sale section -->
+  <section
+    class="max-w-[1200px] mx-auto px-4 mt-6 border border-gray-200 rounded-md bg-white select-none"
+  >
+    <div class="flex justify-between items-center px-3 pt-3">
+      <h4 class="text-xs font-bold text-[#0B74E9] flex items-center gap-1">
+        <img
+          alt="Supermarket logo"
+          height="16"
+          src="https://storage.googleapis.com/a1aa/image/69b46c0a-cf8d-43f6-379e-3113bfd0bfcc.jpg"
+          width="60"
+        />
+        <span>FASH SALE</span>
+      </h4>
+      <a class="text-xs text-gray-500 hover:underline" href="#">Lihat Lainnya &gt;</a>
+    </div>
+    <div class="flex gap-3 overflow-x-auto scrollbar-hide py-3 px-3">
+      <!-- Flash sale item 1 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          18:00
+          <div class="text-[8px] font-normal mt-0.5">00:00:00</div>
+        </div>
+        <img
+          alt="Midnight Secret Spray Cologne 100ml 5pcs product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/91cbd8b3-eb18-4291-bcfb-0bc554138b39.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 56.400
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -25%
+        </div>
+      </div>
+      <!-- Flash sale item 2 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          18:00
+          <div class="text-[8px] font-normal mt-0.5">00:00:00</div>
+        </div>
+        <img
+          alt="Pepsodent Toothpaste product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/f0709b1b-e939-4949-ca30-265f456a139d.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 23.600
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -5%
+        </div>
+      </div>
+      <!-- Flash sale item 3 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          18:00
+          <div class="text-[8px] font-normal mt-0.5">00:00:00</div>
+        </div>
+        <img
+          alt="Guard Body Foam Triple Pack product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/7e9f7328-fc49-421d-bb7e-6fb488d19e7f.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 110.100
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -30%
+        </div>
+        <div
+          class="absolute top-2 right-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          3x
+        </div>
+      </div>
+      <!-- Flash sale item 4 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          00:00
+          <div class="text-[8px] font-normal mt-0.5">tomorrow</div>
+        </div>
+        <img
+          alt="Stella Automatic Air Freshener product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/d9c93685-5587-43b4-dba0-e93cd3270721.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 74.100
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -6%
+        </div>
+      </div>
+      <!-- Flash sale item 5 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          09:00
+          <div class="text-[8px] font-normal mt-0.5">tomorrow</div>
+        </div>
+        <img
+          alt="Neo Coffee product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/57f8ba21-0a21-4e21-67a6-b613b212909e.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 30.300
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -3%
+        </div>
+      </div>
+      <!-- Flash sale item 6 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative"
+      >
+        <div
+          class="bg-[#0B74E9] text-white text-[10px] font-semibold text-center rounded-t-sm py-1 select-none"
+        >
+          09:00
+          <div class="text-[8px] font-normal mt-0.5">tomorrow</div>
+        </div>
+        <img
+          alt="Fortune Minyak Goreng Sawit 2L product image"
+          class="mx-auto mt-2"
+          height="120"
+          src="https://storage.googleapis.com/a1aa/image/023f6008-0e9f-4cfc-df36-f2d83a37023c.jpg"
+          width="120"
+        />
+        <div class="text-[10px] font-semibold text-center mt-1 text-[#D94A3C]">
+          Rp 83.500
+        </div>
+        <div
+          class="text-[8px] text-center mt-1 bg-[#FF7F50] text-white rounded-sm py-[2px] select-none"
+        >
+          STOK TERBATAS
+        </div>
+        <div
+          class="absolute top-2 left-2 bg-[#FF7F50] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          -5%
+        </div>
+        <div
+          class="absolute top-2 right-2 bg-[#0B74E9] text-white text-[8px] px-1 rounded-sm select-none"
+        >
+          2x
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Discount banner -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-10">
+    <div
+      class="bg-[#0B74E9] rounded-md flex flex-col md:flex-row justify-between items-center px-6 py-6 text-white select-none"
+    >
+      <div class="text-center md:text-left max-w-xl">
+        <h2 class="text-2xl font-semibold leading-tight">
+          BELANJA KEBUTUHAN HARIAN
+          <br />
+          <span class="font-extrabold">DISKON S/D 30%</span>
+        </h2>
+      </div>
+      <button
+        aria-label="Lihat Semua"
+        class="mt-4 md:mt-0 bg-[#143D8D] hover:bg-[#0B74E9] transition-colors font-semibold text-sm rounded-md px-6 py-3"
+      >
+        LIHAT SEMUA
+        <i class="fas fa-chevron-right ml-1"></i>
+      </button>
+    </div>
+  </section>
+  <!-- Discount product list -->
+  <section class="max-w-[1200px] mx-auto px-4 mt-6">
+    <div class="flex gap-4 overflow-x-auto scrollbar-hide py-2">
+      <!-- Product 1 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Oatside Oat Milk Barista Blend 1L X 2 Pcs product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/ab59800f-816a-418f-01f4-6bc47512f661.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -27%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">
+          Oatside Oat Milk Barista Blend 1L X 2 Pcs
+        </div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-yellow-400 text-black rounded-sm px-1 inline-block select-none"
+        >
+          XTRA
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 73.300</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Multi Facial Tissue 1000gr 2ply product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/a9d7eb8b-da5d-40f4-c8cc-bb41f4510fa6.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -23%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">Multi Facial Tissue 1000gr x 2ply</div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-red-600 text-white rounded-sm px-1 inline-block select-none"
+        >
+          Pilih Lokal
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 43.000</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Madu Uray Grade A+ Natural Honey 875gr product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/42568f5f-2e88-4cf5-7115-690cd652801d.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -6%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">Madu Uray Grade A+ Natural Honey 875gr</div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-red-600 text-white rounded-sm px-1 inline-block select-none"
+        >
+          Pilih Lokal
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 155.900</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Kapal Api Special Merah 350gr x 2 pcs product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/17324e66-e991-4e38-ee4a-d4fddb51556b.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -1%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">Kapal Api Special Merah 350gr x 2 pcs</div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-yellow-400 text-black rounded-sm px-1 inline-block select-none"
+        >
+          XTRA
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 112.700</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Rose Brand Gula Kristal Putih Tebu Premium 2kg product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/810ae4c4-96fb-4ec7-0179-8388a86595cb.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -4%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">Rose Brand Gula Kristal Putih Tebu Premium 2kg</div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-yellow-400 text-black rounded-sm px-1 inline-block select-none"
+        >
+          XTRA
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 41.000</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div
+        class="flex-shrink-0 w-[140px] border border-gray-200 rounded-md p-2 relative bg-white text-xs text-gray-700 select-none"
+      >
+        <div class="flex justify-between items-center mb-1">
+          <img
+            alt="Totole Kaldu Rasa Jamur Sehat 200gr X 5 Pcs product image"
+            class="rounded-sm"
+            height="40"
+            src="https://storage.googleapis.com/a1aa/image/98a07833-c7d7-487d-d947-7fa81ffe5041.jpg"
+            width="40"
+          />
+          <div
+            class="text-[8px] font-bold text-white bg-[#D94A3C] rounded-sm px-1 select-none"
+          >
+            -1%
+          </div>
+        </div>
+        <div class="text-[8px] font-semibold mb-1">Supermarket</div>
+        <div class="text-[9px] font-semibold mb-1">Totole Kaldu Rasa Jamur Sehat 200gr X 5 Pcs</div>
+        <div
+          class="text-[8px] font-semibold mb-1 bg-yellow-400 text-black rounded-sm px-1 inline-block select-none"
+        >
+          XTRA
+        </div>
+        <div class="text-[9px] font-semibold text-[#D94A3C] mb-1">Rp 140.200</div>
+        <div
+          class="text-right text-[#0B74E9] text-[14px] font-bold cursor-pointer select-none"
+        >
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    (() => {
+      const slider = document.querySelector('#slider > div');
+      const dots = document.querySelectorAll('#dots button');
+      const totalSlides = dots.length;
+      let currentIndex = 0;
+      let interval;
+
+      function goToSlide(index) {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+        slider.style.transform = `translateX(-${index * 100}%)`;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('bg-[#E94B3C]', i === index);
+          dot.classList.toggle('bg-gray-300', i !== index);
+        });
+        currentIndex = index;
+      }
+
+      function startAutoSlide() {
+        interval = setInterval(() => {
+          goToSlide(currentIndex + 1);
+        }, 4000);
+      }
+
+      function stopAutoSlide() {
+        clearInterval(interval);
+      }
+
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          stopAutoSlide();
+          goToSlide(parseInt(dot.dataset.index));
+          startAutoSlide();
+        });
+      });
+
+      goToSlide(0);
+      startAutoSlide();
+    })();
+  </script>
+
+  <footer class="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-6 relative">
+    <div class="flex flex-wrap justify-between gap-y-6">
+      <!-- Layanan Pelanggan -->
+      <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">LAYANAN PELANGGAN</p>
+        <ul class="space-y-[2px]">
+          <li><a class="text-blue-600 hover:underline" href="#">Bantuan</a></li>
+          <li><a class="text-blue-600 hover:underline" href="#">Metode Pembayaran</a></li>
+          <li><a class="hover:underline" href="#">ShopeePay</a></li>
+          <li><a class="hover:underline" href="#">Koin Shopee</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pesanan Pembeli</a></li>
+          <li><a class="hover:underline" href="#">Lacak Pengiriman Penjual</a></li>
+          <li><a class="hover:underline" href="#">Gratis Ongkir</a></li>
+          <li><a class="hover:underline" href="#">Pengembalian Barang &amp; Dana</a></li>
+          <li><a class="hover:underline" href="#">Garansi Shopee</a></li>
+          <li><a class="hover:underline" href="#">Xtra Aman</a></li>
+          <li><a class="hover:underline" href="#">Hubungi Kami</a></li>
+        </ul>
+      </div>
+      <!-- Jelajahi Shopee -->
+      <div class="w-1/2 sm:w-1/4 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">JELAJAHI SHOPEE</p>
+        <ul class="space-y-[2px]">
+          <li><a class="hover:underline" href="#">Tentang Kami</a></li>
+          <li><a class="hover:underline" href="#">Karir</a></li>
+          <li><a class="hover:underline" href="#">Kebijakan Shopee</a></li>
+          <li><a class="hover:underline" href="#">Kebijakan Privasi</a></li>
+          <li><a class="hover:underline" href="#">Blog</a></li>
+          <li><a class="hover:underline" href="#">Shopee Mall</a></li>
+          <li><a class="hover:underline" href="#">Seller Centre</a></li>
+          <li><a class="hover:underline" href="#">Flash Sale</a></li>
+          <li><a class="hover:underline" href="#">Kontak Media</a></li>
+          <li><a class="hover:underline" href="#">Shopee Affiliate</a></li>
+        </ul>
+      </div>
+      <!-- Pembayaran -->
+      <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">PEMBAYARAN</p>
+        <div class="flex flex-wrap gap-1">
+          <img
+            alt="BCA bank logo with blue text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/69ce7e07-9e23-413c-7e4e-da445d5e616e.jpg"
+            width="50"
+          />
+          <img
+            alt="CIMB Niaga bank logo with red text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/00b18edf-dfeb-4e8e-178c-916f9b639716.jpg"
+            width="50"
+          />
+          <img
+            alt="BNI bank logo with blue text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/cd2e0e2c-1962-4b20-f377-7d2e08ad1062.jpg"
+            width="50"
+          />
+          <img
+            alt="Mandiri bank logo with blue text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/6530679f-9bae-4038-1a8e-527daadd0274.jpg"
+            width="50"
+          />
+          <img
+            alt="Indomaret logo with blue text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/73d1a0ff-3416-4c2b-4386-c1b367b491bb.jpg"
+            width="50"
+          />
+          <img
+            alt="Alfamart logo with red text on white background"
+            class="h-5 w-auto"
+            height="20"
+            src="https://storage.googleapis.com/a1aa/image/e1154af9-0212-4738-0c56-78e5b494ac96.jpg"
+            width="50"
+          />
+        </div>
+      </div>
+      <!-- Ikuti Kami -->
+      <div class="w-1/2 sm:w-1/5 min-w-[140px]">
+        <p class="text-[13px] font-semibold text-gray-700 mb-2">IKUTI KAMI</p>
+        <ul class="space-y-[6px] text-[13px]">
+          <li class="flex items-center gap-2">
+            <span
+              class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"
+              ><i class="fab fa-facebook-f"></i
+            ></span>
+            <a class="hover:underline" href="#">Facebook</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span
+              class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"
+              ><i class="fab fa-instagram"></i
+            ></span>
+            <a class="hover:underline" href="#">Instagram</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span
+              class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"
+              ><i class="fab fa-twitter"></i
+            ></span>
+            <a class="hover:underline" href="#">Twitter</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span
+              class="w-5 h-5 rounded-full bg-gray-700 text-white flex items-center justify-center text-xs"
+              ><i class="fab fa-linkedin-in"></i
+            ></span>
+            <a class="hover:underline" href="#">Linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Download Aplikasi Shopee moved down to align with Facebook text -->
+    <div
+      class="absolute right-0 flex items-center gap-3"
+      style="top: 3.3rem;"
+    >
+      <img
+        alt="Black and white QR code for Shopee app download"
+        class="h-[70px] w-[70px]"
+        height="70"
+        src="https://storage.googleapis.com/a1aa/image/628b6677-c1bb-44a8-419f-704326749a1d.jpg"
+        width="70"
+      />
+      <div class="flex flex-col space-y-2">
+        <img
+          alt="Google Play store logo with multicolor icon and text"
+          class="h-[30px] w-auto"
+          height="30"
+          src="https://storage.googleapis.com/a1aa/image/7a009d85-3ddb-4f73-4c8f-6cbb5e692762.jpg"
+          width="100"
+        />
+        <img
+          alt="Apple App Store logo with black apple icon and text"
+          class="h-[30px] w-auto"
+          height="30"
+          src="https://storage.googleapis.com/a1aa/image/d20488b9-ee66-4c61-85c2-825d79f84c19.jpg"
+          width="100"
+        />
+      </div>
+    </div>
+    <hr class="border-t border-gray-300 my-6" />
+    <div
+      class="flex flex-col sm:flex-row justify-between text-[12px] text-gray-500"
+    >
+      <div>© Shopee 2020. Hak Cipta Dilindungi</div>
+      <div class="mt-2 sm:mt-0">
+        Negara: Singapura | Indonesia | Taiwan | Thailand | Malaysia | Vietnam |
+        Filipina |
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
